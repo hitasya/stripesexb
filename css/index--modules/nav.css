@@ -1,0 +1,133 @@
+.menu {
+    visibility: hidden; display: none;
+}
+
+
+/* hamburger */
+.hamburger-wrapper {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    position: relative; left: 50%; transform: translateX(-50%);
+    z-index: 2; /* must be above the menu overlay */
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+    width: 50px; height: 6px; border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    background: #000;
+}
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 50px; height: 6px; border-radius: 3px;
+}
+.hamburger {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.hamburger::before {
+    top: -16px;
+}
+.hamburger::after {
+    top: 16px;
+}
+
+.hamburger-wrapper.active .hamburger {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+.hamburger-wrapper.active .hamburger::before {
+    top: 0;
+    transform: rotate(135deg);
+    background: #fff;
+}
+.hamburger-wrapper.active .hamburger::after {
+    top: 0;
+    transform: rotate(405deg);
+    background: #fff;
+}
+
+
+/* overlay */
+.overlay-wrapper {
+    background: #000;
+    position: absolute; top: 0; z-index: 1;
+    width: 100%; height: 100%;
+    visibility: hidden;
+    opacity: 0; transition: all 500ms ease-in-out;
+}
+    .overlay-menu {
+        padding: 0; margin: 0;
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+        .overlay-menu li {
+            display: block;
+            font-size: 1rem; font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            width: 200px; height: 70px; margin: 20px 0 0;
+            transition: all 0.3s ease-out;
+        }
+            .overlay-menu a {
+                color: #fff;
+                display: inline-block; 
+                /* we can't set the dimensions for `a` without setting display block */ 
+                width: 200px; height: 60px; padding: 20px 0;
+                position: relative; overflow: hidden;
+            }
+                .overlay-menu span {
+                    display: inline;
+                    /* seems that can be inline, I dunno why they chose `block` */
+                }
+            /* cool border-animation for the `a` */
+            .overlay-menu a::before, 
+            .overlay-menu a::after, 
+            .overlay-menu span::before, 
+            .overlay-menu span::after {
+                content: '';
+                position: absolute;
+                transition: transform .4s cubic-bezier(.88, .26, .23, .91);
+            }
+
+            .overlay-menu a::before, 
+            .overlay-menu a::after {
+                background: #fff;
+                bottom: 0; right: 0;
+            }   
+            .overlay-menu a::before {width: 100%; height: 1px; transform: translateX(-100%);}
+            .overlay-menu a::after {width: 1px; height: 100%; transform: translateY(100%);}
+            
+            .overlay-menu span::before,
+            .overlay-menu span::after {
+                background: #fff;
+                top: 0; left: 0;
+            }
+            .overlay-menu span::before {width: 1px; height: 100%; transform: translateY(-100%);}
+            .overlay-menu span::after {width: 100%; height: 1px; transform: translateX(100%);}
+
+            .overlay-menu a:hover::before,
+            .overlay-menu a:hover span::after {
+                transform: translateX(0);
+            }
+            .overlay-menu a:hover::after,
+            .overlay-menu a:hover span::before {
+                transform: translateY(0);
+            }
+            /*end of cool border animation for the `a`*/
+
+.overlay-wrapper.show {
+    visibility: visible;
+    opacity: 0.96;
+}
+body.disableScrollForBody {
+    overflow: hidden;
+}
+/* end of overlay */
+
+/***********************************************************************
+***********************************************************************/
+
+@media screen and (min-width: 1366px) {
+
+}
