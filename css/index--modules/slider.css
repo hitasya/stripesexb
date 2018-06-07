@@ -1,3 +1,7 @@
+/* 
+https://codepen.io/Iasitasya/pen/xzOdaL?editors=0110
+*/
+
 @font-face {
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf");
     font-family: 'Polar';
@@ -39,26 +43,31 @@ svg {
 
 
 .slider-pagi {
-    position: absolute; z-index: 2; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);
+    position: absolute; z-index: 2; left: 50%; bottom: 2rem; -webkit-transform: translateX(-50%); transform: translateX(-50%);
     font-size: 0;
+    padding: 0;
 }
     .slider-pagi__elem {
-        width: 2rem; height: 2rem; margin: 0 0.5rem; border-radius: 50%; border: 2px solid #fff; /* i dunno why */ 
+        width: 20px; height: 20px; margin: 0 0.5rem; border-radius: 50%; border: 2px solid #fff; /* i dunno why */ 
         position: relative; 
         display: inline-block; vertical-align: top;        
         cursor: pointer;
     }
+    @media screen and (max-width: 360px) {
+        .slider-pagi__elem {
+            margin: 0 0.3rem;
+        }
+    }
     .slider-pagi__elem::before {
         content: '';
-        position: absolute; left: 50%; top: 50%; 
-        width: 1.2rem; height: 1.2rem; -webkit-transform: translate(-50%, -50%) scale(0); transform: translate(-50%, -50%) scale(0);    
+        position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%) scale(0); transform: translate(-50%, -50%) scale(0);
+        width: 12px; height: 12px;     
         background: #fff;
         border-radius: 50%;
         transition: -webkit-transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s;
-        
     }
     .slider-pagi__elem.active::before, .slider-pagi__elem:hover::before {
-        -webkit-transform: scale(1); transform: scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1); transform: translate(-50%, -50%) scale(1);
     }
 
 .slider {

@@ -9,7 +9,7 @@
     height: 80px;
     cursor: pointer;
     position: relative; left: 50%; transform: translateX(-50%);
-    z-index: 2; /* must be above the menu overlay */
+    z-index: 6; /* must be above the menu overlay, over the `slide__text-link` and the slider stuff */
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
@@ -52,8 +52,9 @@
 /* overlay */
 .overlay-wrapper {
     background: #000;
-    position: absolute; top: 0; z-index: 1;
-    width: 100%; height: 100%;
+    position: fixed; top: 0; left: 0; bottom: 0; right: 0; /*deleted the `height` and `width` 100% after replacing `position: absolute` with `position: fixed` */
+    /*overflow-y: scroll;*/
+    z-index: 5;
     visibility: hidden;
     opacity: 0; transition: all 500ms ease-in-out;
 }
@@ -120,7 +121,7 @@
     visibility: visible;
     opacity: 0.96;
 }
-body.disableScrollForBody {
+html.no-scroll{
     overflow: hidden;
 }
 /* end of overlay */
