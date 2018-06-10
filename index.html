@@ -6,138 +6,176 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Stripes Exhibitions</title>
-
+    
     <link type="text/css" rel="stylesheet" href="css/index--main.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 
 <body>
 
+    <div class="grid-container">
 
-    <!--Header-->
-    <nav class="hamburger-wrapper">
-        <div class="hamburger"></div>
-    </nav>
-    <div class="overlay-wrapper">
-        <ul class="overlay-menu">
-            <li><a href="#"><span>projects</span></a></li>
-            <li><a href="#"><span>about</span></a></li>
-            <li><a href="#"><span>clients</span></a></li>
-            <li><a href="#"><span>services</span></a></li>
-            <li><a href="#"><span>contact</span></a></li>
-        </ul>
-    </div>
+        <nav class="hamburger-wrapper">
+            <div class="hamburger"></div>
+        </nav>
+        <div class="overlay-wrapper">
+            <ul class="overlay-menu">
+                <li><a href="#"><span>projects</span></a></li>
+                <li><a href="#"><span>about</span></a></li>
+                <li><a href="#"><span>clients</span></a></li>
+                <li><a href="#"><span>services</span></a></li>
+                <li><a href="#"><span>contact</span></a></li>
+            </ul>
+        </div>
 
+        <!--Header-->
+        <div class="slider-container">
+            <div class="slider-control left inactive"></div>
+            <div class="slider-control right"></div>
+            <ul class="slider-pagi"></ul>
 
-    <!--slider-->
-    <div class="slider-container">
-
-        <div class="slider-control left inactive"></div>
-        <div class="slider-control right"></div>
-        <ul class="slider-pagi"></ul>
-
-        <div class="slider">
-            <div class="slide slide-0 active">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>        
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Project 1</h2>
-                        <a class="slide__text-link">project link</a>
-                    </div>    
+            <div class="slider">
+                <div class="slide slide-0 active">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>        
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading"><a href="#">Project 1</a></h2>
+                            <a class="slide__text-link">project link</a>
+                        </div>    
+                    </div>
                 </div>
-            </div>
-            <div class="slide slide-1">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>        
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Project 2</h2>
-                        <a class="slide__text-link">project link</a>
-                    </div>    
+                <div class="slide slide-1">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>        
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading"><a href="#">Project 2</a></h2>
+                            <a class="slide__text-link">project link</a>
+                        </div>    
+                    </div>
                 </div>
-            </div>
-            <div class="slide slide-2">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>        
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Project 3</h2>
-                        <a class="slide__text-link">project link</a>
-                    </div>    
+                <div class="slide slide-2">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>        
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading"><a href="#">Project 3</a></h2>
+                            <a class="slide__text-link">project link</a>
+                        </div>    
+                    </div>
                 </div>
-            </div>
-            <div class="slide slide-3">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>        
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Project 4</h2>
-                        <a class="slide__text-link">project link</a>
-                    </div>    
+                <div class="slide slide-3">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>        
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading"><a href="#">Project 4</a></h2>
+                            <a class="slide__text-link">project link</a>
+                        </div>    
+                    </div>
                 </div>
             </div>
         </div>
-        
-    </div> <!-- end of slider -->
 
+        <!--main-->
+        <main id="main">
+            <h1>Welcome to <b>Stripes Interiors LLC</b></h1>
+            <p>
+                
+                Our journey begun with a vision: 
+                Truth serves life, and so technology serves beauty.
 
+                Nations and Empires thrive not on money, but on beautiful ideas and ideals---
+                Europe is the most visited continent in the world, and is the creadle of civilization;
+                Japan succeeded despite its resource-poverty while Russia and South-America struggles;
+                
+                Why? Because in a world that runs on emotions, the most powerful economic force is trust, the most creative people are the most empowered, the most successful companies are those that answer their 'why'---because people don't buy what you do, they buy why you do it;they don't suffer for money, but for ideas and ideals that are beautiful.
+                 
+                Therefore, by constantly reminding people of what they stand for and so who they are, beautifully presented principles multiply productivity within companies, regions, and lives; it thus raises civilization to a new level.
 
-    <h1>Parallaxing!</h1>
-    
-    <div id="content">
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
-        <p>All work and no play makes Jack a dull boy</p>
+                We're not just another construction firm, but architects of the future; our vision is a unifying project that is conducted under the eye of centuries, and is not restricted to Quarterly reports.
+
+                We contribute to this vision by collaborating with our clients on a one-to-one basis to identify their specific corporate principles, and thus to create modern bespoke and beautiful environments that bespeak the client's brand.
+
+                “It is only shallow people who do not judge by appearances." - Oscar Wilde
+                
+            </p>
+            
+            <h1>Our Clients</h1>
+
+            <div class="slider js_slider">
+                <div class="frame js_frame">
+                    <ul class="slides js_slides">
+                            <li class="js_slide"><img src="img/clients/adcb.png" alt="adcb" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/adib.png" alt="adib" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/ahb.png" alt="ahb" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/ajb.png" alt="ajman bank" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/bnq.png" alt="bnq" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/dewa.png" alt="dewa" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/dib.png" alt="dib" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/dxb.png" alt="dxb" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/enbd.png" alt="enbd" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="https://www.stripesme.com/images/clients/masraf.png" alt="masraf" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/noor.png" alt="noor" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/nbad.png" alt="nbad" height="150px" width="150px"></li>
+                            <li class="js_slide"><img src="img/clients/unb.png" alt="unb" height="150px" width="150px"></li>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                    <li><img src="img/clients/adcb.png" alt="adcb" height="150px" width="150px"></li>
+                    <li><img src="img/clients/adib.png" alt="adib" height="150px" width="150px"></li>
+                    <li><img src="img/clients/ahb.png" alt="ahb" height="150px" width="150px"></li>
+                    <li><img src="img/clients/ajb.png" alt="ajman bank" height="150px" width="150px"></li>
+                    <li><img src="img/clients/bnq.png" alt="bnq" height="150px" width="150px"></li>
+                    <li><img src="img/clients/dewa.png" alt="dewa" height="150px" width="150px"></li>
+                    <li><img src="img/clients/dib.png" alt="dib" height="150px" width="150px"></li>
+                    <li><img src="img/clients/dxb.png" alt="dxb" height="150px" width="150px"></li>
+                    <li><img src="img/clients/enbd.png" alt="enbd" height="150px" width="150px"></li>
+                    <li><img src="https://www.stripesme.com/images/clients/masraf.png" alt="masraf" height="150px" width="150px"></li>
+                    <li><img src="img/clients/noor.png" alt="noor" height="150px" width="150px"></li>
+                    <li><img src="img/clients/nbad.png" alt="nbad" height="150px" width="150px"></li>
+                    <li><img src="img/clients/unb.png" alt="unb" height="150px" width="150px"></li>
+            </ul> 
+            
+
+            <h1>What we offer</h1>
+            <p></p>
+        </main>
+
+        <!--Footer-->
+        <footer id="footer">
+            <h3>stripes interiors LLC</h3>
+                <span>street no. 21</span>
+                <span>al-quoz ind area 4</span>
+                <span>dubai - UAE</span>
+
+            <h3>contact info</h3>
+            <span>T: +971 4336 9229</span>
+            <span>E: info@stripesexb.com</span>
+            <span>W: www.stripesexb.com</span>
+        </footer>
+
     </div>
 
-
-
-    <!--Footer-->
-    <footer>
-        <h3>stripes interiors LLC</h3>
-            <span>street no. 21</span>
-            <span>al-quoz ind area 4</span>
-            <span>dubai - UAE</span>
-
-        <h3>contact info</h3>
-        <span>T: +971 4336 9229</span>
-        <span>E: info@stripesexb.com</span>
-        <span>W: www.stripesexb.com</span>
-    </footer>
-
-
-    <!--header nav with overlay-->
+    <!--nav-->
     <script src="js/nav.js"></script>
-    <!--slider with x-axis parallax-->
+    <!--hero-image slider for homepage-->
     <script src="js/slider.js"></script>
+
+    <!--carousel for clients-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.5.1/jquery.lory.js"></script>
+
+            
 </body>
 </html>

@@ -17,4 +17,18 @@ function init() {
 }
 document.addEventListener("DOMContentLoaded", init, false);
 
+/* alternative syntax for all of the above:
 
+window.addEventListener("DOMContentLoaded", scrollLoop, false);
+ 
+var xScrollPosition;
+var yScrollPosition;
+ 
+function scrollLoop() {
+    xScrollPosition = window.scrollX;
+    yScrollPosition = window.scrollY;
+ 
+    requestAnimationFrame(scrollLoop);
+}
+
+*/

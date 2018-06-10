@@ -5,10 +5,9 @@
 
 /* hamburger */
 .hamburger-wrapper {
-    width: 80px;
-    height: 80px;
+    width: 80px; height: 80px;
     cursor: pointer;
-    position: relative; left: 50%; transform: translateX(-50%);
+    position: fixed; top: 0; left: 50%; transform: translateX(-50%);
     z-index: 6; /* must be above the menu overlay, over the `slide__text-link` and the slider stuff */
 }
 

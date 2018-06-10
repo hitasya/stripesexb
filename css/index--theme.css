@@ -3,9 +3,16 @@
 https://fonts.google.com/?selection.family=Cormorant+Garamond:300,400,400i,700|Poppins:200,400,400i,700,700i,900|Roboto+Mono:100,400,700&query=poppins 
 */
 
+body {
+    background-color: #EFEFEF;
+}
 
 .overlay-wrapper .overlay-menu li a {
     text-transform: uppercase;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
+}
+
+main#main {
+    background: #fff;
 }
