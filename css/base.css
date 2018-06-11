@@ -12,7 +12,7 @@ ul {
 }
 
 html, body {
-  overflow-x: hidden; /* apply this declaration to html for it to work as intended (see slider) */
+  overflow-x: hidden;/* apply this declaration to html for it to work as intended (see slider) */
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */

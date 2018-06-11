@@ -1,5 +1,5 @@
 .grid-container { 
-    display: grid;
+    display: none; /*changes to `display: grid` on load. see preloader program in file js*/
     grid-template: 
         "header"
         "main"
@@ -11,10 +11,10 @@
 }
 main#main {
     grid-area: main; justify-self: center;
-    display: flex; flex-direction: column;
+    display: flex; flex-direction: column; align-items: center;
     max-width: 768px;
 }
 footer#footer {
     grid-area: footer; justify-self: center;
-    display: flex;
+    display: flex; flex-direction: column; /* this thing fixed the viewport issue, where the body was wider than viewport */
 }

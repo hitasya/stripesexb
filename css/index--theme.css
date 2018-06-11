@@ -4,7 +4,8 @@ https://fonts.google.com/?selection.family=Cormorant+Garamond:300,400,400i,700|P
 */
 
 body {
-    background-color: #EFEFEF;
+    /*background-color: #EFEFEF;*/
+    background-color: #1E0731;
 }
 
 .overlay-wrapper .overlay-menu li a {
@@ -15,4 +16,7 @@ body {
 
 main#main {
     background: #fff;
+}
+footer#footer {
+    color: #fff;
 }
