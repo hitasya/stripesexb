@@ -1,6 +1,7 @@
 window.addEventListener('load', function(){
     let preloader = document.querySelector('.preloader-wrapper');
-    let main = document.querySelector('.grid-container');
+    let main = document.querySelector('div.grid-container');
+    
     preloader.style.display = 'none';
-    main.style.display = 'grid';
+    main.classList.toggle('not-visible');
 });
