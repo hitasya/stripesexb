@@ -2,12 +2,11 @@
     visibility: hidden; display: none;
 }
 
-
 /* hamburger */
 .hamburger-wrapper {
     width: 80px; height: 80px;
     cursor: pointer;
-    position: fixed; top: 0; left: 50%; transform: translateX(-50%);
+    position: fixed; top: 0; right: 10%;
     z-index: 6; /* must be above the menu overlay, over the `slide__text-link` and the slider stuff */
 }
 
@@ -15,7 +14,7 @@
     width: 50px; height: 6px; border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
-    background: #000;
+    background-color: #1E0731;
 }
 .hamburger::before, .hamburger::after {
     content: '';

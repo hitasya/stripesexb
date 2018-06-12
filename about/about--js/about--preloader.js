@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
     let preloader = document.querySelector('.preloader-wrapper');
-    let main = document.querySelector('div.grid-container');
+    let main = document.querySelector('main.flexbox');
     let body = document.querySelector('body');
     
     preloader.style.display = 'none';

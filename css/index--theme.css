@@ -4,7 +4,9 @@ https://fonts.google.com/?selection.family=Cormorant+Garamond:300,400,400i,700|P
 */
 
 body {
-    /*background-color: #EFEFEF;*/
+    background-color: #EFEFEF;
+}
+body.preloader {
     background-color: #1E0731;
 }
 
@@ -18,5 +20,6 @@ main#main {
     background: #fff;
 }
 footer#footer {
-    color: #fff;
+    background-color: #242528;  
+    width: 100%;
 }

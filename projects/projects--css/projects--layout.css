@@ -1,0 +1,7 @@
+.flexbox {
+    display: none; 
+    flex-direction: column; 
+    align-items: center;
+    /*position: relative; top: 80px;  to clear the nav */
+    margin: 80px 0 0 0;
+}

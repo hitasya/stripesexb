@@ -1,9 +1,9 @@
 window.addEventListener('load', function(){
     let preloader = document.querySelector('.preloader-wrapper');
-    let main = document.querySelector('div.grid-container');
+    let main = document.querySelector('main');
     let body = document.querySelector('body');
     
     preloader.style.display = 'none';
-    main.classList.toggle('not-visible');
+    main.style.display = 'flex';
     body.classList.toggle('preloader');
 });
