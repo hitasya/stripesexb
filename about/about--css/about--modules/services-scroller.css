@@ -1,14 +1,17 @@
 .services-wrapper {
     font-weight: 300;
     font-family: segoe ui, helvetica neue, helvetica, arial, sans-serif;
-
     width: 300px;
     height: 25px;
-    left: 50%;
-    top: 50%;
+    margin: 0;
     position: relative;
-    margin-top: -15px;
-    margin-left: -150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    /*overflow-x: hidden;*/
 }
  
 p.services-overture {
@@ -16,8 +19,15 @@ p.services-overture {
     font-size: 120%;
     line-height: 25px;
     display: block;
-    margin-right: 6px;
+    margin: 0 9px 0 0;
     color: #999;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
 }
  
 span.services-roll {
@@ -30,4 +40,11 @@ span.services-roll {
     overflow-y: hidden;
     height: 25px;
     float: left;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
 }
