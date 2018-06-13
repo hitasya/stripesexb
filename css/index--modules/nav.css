@@ -4,22 +4,30 @@
 
 /* hamburger */
 .hamburger-wrapper {
-    width: 80px; height: 80px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
-    position: fixed; top: 0; right: 10%;
-    z-index: 6; /* must be above the menu overlay, over the `slide__text-link` and the slider stuff */
+    position: fixed; z-index: 6;
+    /*mustbeabovethemenuoverlay,overthe`slide__text-link`andthesliderstuff*/
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
-    width: 50px; height: 6px; border-radius: 3px;
+    width: 50px; height: 4px; border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
-    background-color: #1E0731;
+    background-color: goldenrod;
 }
 .hamburger::before, .hamburger::after {
     content: '';
     position: absolute;
-    width: 50px; height: 6px; border-radius: 3px;
+    width: 50px; height: 4px; border-radius: 3px;
 }
 .hamburger {
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
@@ -38,12 +46,12 @@
 .hamburger-wrapper.active .hamburger::before {
     top: 0;
     transform: rotate(135deg);
-    background: #fff;
+    background: #fafafa;
 }
 .hamburger-wrapper.active .hamburger::after {
     top: 0;
     transform: rotate(405deg);
-    background: #fff;
+    background: #fafafa;
 }
 
 
@@ -69,15 +77,20 @@
             transition: all 0.3s ease-out;
         }
             .overlay-menu a {
-                color: #fff;
+                color: goldenrod;
                 display: inline-block; 
                 /* we can't set the dimensions for `a` without setting display block */ 
                 width: 200px; height: 60px; padding: 20px 0;
                 position: relative; overflow: hidden;
+                -webkit-user-select: none; /* Safari 3.1+ */
+                -moz-user-select: none; /* Firefox 2+ */
+                -ms-user-select: none; /* IE 10+ */
+                user-select: none; /* Standard syntax */
             }
                 .overlay-menu span {
                     display: inline;
                     /* seems that can be inline, I dunno why they chose `block` */
+
                 }
             /* cool border-animation for the `a` */
             .overlay-menu a::before, 
@@ -91,7 +104,7 @@
 
             .overlay-menu a::before, 
             .overlay-menu a::after {
-                background: #fff;
+                background: #fafafa;
                 bottom: 0; right: 0;
             }   
             .overlay-menu a::before {width: 100%; height: 1px; transform: translateX(-100%);}
@@ -99,7 +112,7 @@
             
             .overlay-menu span::before,
             .overlay-menu span::after {
-                background: #fff;
+                background: #fafafa;
                 top: 0; left: 0;
             }
             .overlay-menu span::before {width: 1px; height: 100%; transform: translateY(-100%);}

@@ -1,9 +1,7 @@
 .about-header {
     background-image: url('../../about--img/about-header.jpg');
-    min-height: 250px;
     position: relative;
-    width: 95%;
-    margin: 0 0 2em;
+    height: 50vh; width: 100vw;
 }
 
 .about-header div {

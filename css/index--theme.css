@@ -1,25 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,400i,700|Poppins:200,400,400i,700,700i,900|Roboto+Mono:100,400,700');
-/* 
-https://fonts.google.com/?selection.family=Cormorant+Garamond:300,400,400i,700|Poppins:200,400,400i,700,700i,900|Roboto+Mono:100,400,700&query=poppins 
-*/
+@font-face {
+    font-family: 'Azedo-Bold';
+    src: url('../fonts/Azedo/Azedo-Bold.otf');
+}
+@font-face {
+    font-family: 'Azedo-Light';
+    src: url('../fonts/Azedo/Azedo-Light.otf');
+}
+@font-face {
+    font-family: 'Roboto mono';
+    src: url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,400,700');
+}
+@font-face {
+    font-family: 'Venge regular';
+    src: url('../fonts/elements-venge-typeface-MGD449-2017-06-16/Venge\ Regular.otf'),
+        url('../fonts/elements-venge-typeface-MGD449-2017-06-16/Webfonts/Venge\ Regular.woff');
+}
+
+:root {
+    --bg: #fafafa; /* #efefef | #ececec */
+    --bg-preloader: #1E0731;
+    --bg-footer: #242528;
+
+    --font-color-footer: #5e5e5f;
+    --font-color-heading: goldenrod;
+
+    --font-family-for-headings: 'Azedo-Light', 'venge regular', 'Roboto mono', 'ubuntu', monospace;
+    --font-family-for-menu: 'roboto mono', monospace;
+
+    --font-letter-spacing: 5pt;
+}
 
 body {
-    background-color: #fafafa;
+    background-color: var(--bg);
 }
-body.preloader {
-    background-color: #1E0731;
-}
+    body.preloader {
+        background-color: var(--bg-preloader);
+    }
+
 
 .overlay-wrapper .overlay-menu li a {
     text-transform: uppercase;
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--font-family-for-menu);
     font-weight: 100;
 }
 
 main#main {
-    background: #fff;
+    background: transparent;
 }
+    main#main h1 {
+        font-family: var(--font-family-for-headings);
+        color: var(--font-color-heading);
+        letter-spacing: var(--font-letter-spacing);
+    }
 footer#footer {
-    background-color: #242528;  
+    background-color: var(--bg-footer);  
     width: 100%;
+    color: var(--font-color-footer);
 }
