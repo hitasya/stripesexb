@@ -1,6 +1,7 @@
 @import url('index--modules/nav.css');
-@import url('index--modules/slider.css');
+/*@import url('index--modules/slider.css');*/
 @import url('index--modules/clients-carousel.css');
 @import url('index--modules/preloader.css');
 @import url('index--modules/headings.css');
 @import url('index--modules/footer.css');
+@import url('index--modules/three-slider.css')
