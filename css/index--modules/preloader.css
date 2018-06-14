@@ -4,10 +4,23 @@ body.preloader {
 }
 */
 .preloader-wrapper{
-    position: fixed; 
+    position: fixed; top: 50%; left: 30%;
     float: left;
-    margin: 50vh auto;
 }
+@media screen and (max-width: 900px) {
+    .preloader-wrapper {left: 25%;}
+}
+@media screen and (max-width: 600px) {
+    .preloader-wrapper {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        left: 50%; top: 15%;
+    }
+}
+
 
 .line{
     position: absolute;
