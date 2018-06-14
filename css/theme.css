@@ -39,7 +39,8 @@
     --font-family-for-heading: 'Azedo-Light', 'venge regular', 'Roboto mono', 'ubuntu', monospace;
     --font-family-for-menu: 'roboto mono', monospace;
     --font-family-for-para: 'roboto mono', serif;
-    
+    --font-family-for-slider: 'azedo bold', serif;
+
     --letter-spacing-for-heading: 5pt;
     --letter-spacing-for-para: 1pt;
 }
@@ -80,4 +81,12 @@ p {
     font-family: var(--font-family-for-para);
     color: var(--font-color-para);
     letter-spacing: var(--letter-spacing-for-para);
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.slide__text-heading {
+    font-family: 'azedo bold', serif;
+    color: #fafafa;
 }

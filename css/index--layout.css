@@ -11,7 +11,7 @@
     grid-area: header;
 }
 main#main {
-    grid-area: main; justify-self: center; overflow: hidden;
+    grid-area: main; justify-self: center; /* overflow: hidden; */
     display: flex; flex-direction: column; align-items: center;
     max-width: 768px;
     position: relative; top: -4em; background: transparent; /* so that the slider transition animation isn't covered*/

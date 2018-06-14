@@ -24,6 +24,11 @@
     transition: 0.5s;
     background-color: goldenrod;
 }
+.hamburger-wrapper:hover > .hamburger, 
+.hamburger-wrapper:hover > .hamburger::before, 
+.hamburger-wrapper:hover > .hamburger::after {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+}
 .hamburger::before, .hamburger::after {
     content: '';
     position: absolute;

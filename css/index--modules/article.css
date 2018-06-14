@@ -1,3 +1,4 @@
-main#main p {
+p {
     margin: 0 0 1em;
+    width: 65vw;
 }
