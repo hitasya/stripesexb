@@ -1,15 +1,12 @@
-  body {
-    background: #000;
-  }
-  
   svg {
     display: block;
     overflow: visible;
   }
   
   .slider-container {
-    position: relative;
+    display: none;
     height: 100vh;
+    position: relative; 
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -118,19 +115,22 @@
   }
   .slide__bg {
     position: absolute;
-    top: 0;
-    left: -50%;
-    width: 100%;
-    height: 100%;
+    top: 0; left: -50%;
+    width: 100%; height: 100%;
     background-size: cover;
     will-change: transform;
   }
   .slide:nth-child(1) {
     left: 0;
   }
+  /*
   .slide:nth-child(1) .slide__bg {
     left: 0;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-3.jpg");
+    background-image: url("../../projects--img/360x640/360x640-enbd2-copy.jpg");
+  }
+  */
+  @media screen and (orientation: portrait) {
+    
   }
   .slide:nth-child(1) .slide__overlay-path {
     fill: #e99c7e;
@@ -143,10 +143,12 @@
   .slide:nth-child(2) {
     left: 100%;
   }
+  /*
   .slide:nth-child(2) .slide__bg {
     left: -50%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-2.jpg");
+    background-image: url("../../projects--img/360x640/360x640-nb-bike.jpg");
   }
+  */
   .slide:nth-child(2) .slide__overlay-path {
     fill: #e1ccae;
   }
@@ -158,10 +160,12 @@
   .slide:nth-child(3) {
     left: 200%;
   }
+  /*
   .slide:nth-child(3) .slide__bg {
     left: -100%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-1.jpg");
+    background-image: url("../../projects--img/360x640/360x640-enbd1-copy.jpg");
   }
+  */
   .slide:nth-child(3) .slide__overlay-path {
     fill: #adc5cd;
   }
@@ -173,10 +177,12 @@
   .slide:nth-child(4) {
     left: 300%;
   }
+  /*
   .slide:nth-child(4) .slide__bg {
     left: -150%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");
+    background-image: url("../../projects--img/360x640/360x640-dubai_police-copy.jpg");
   }
+  */
   .slide:nth-child(4) .slide__overlay-path {
     fill: #cbc6c3;
   }
@@ -244,7 +250,7 @@
     }
   }
   .slide__text-heading {
-    font-family: "Polar", Helvetica, Arial, sans-serif;
+    /*font-family: "Polar", Helvetica, Arial, sans-serif;*/
     font-size: 5rem;
     margin-bottom: 2rem;
   }
@@ -254,7 +260,7 @@
     }
   }
   .slide__text-desc {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
@@ -301,4 +307,29 @@
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
   }
-  
+
+/*************************************************************************************/
+
+@media screen and (min-width: 1280px) {
+  .slider-container {
+    display: block;
+  }
+  .slide:nth-child(1) .slide__bg {
+    left: 0;
+    background-image: url("../../projects--img/1366x768/enbd1.jpg");
+  }
+  .slide:nth-child(2) .slide__bg {
+    left: -50%;
+    background-image: url("../../projects--img/1366x768/nb-bike.jpg");
+  }
+  .slide:nth-child(3) .slide__bg {
+    left: -100%;
+    background-image: url("../../projects--img/1366x768/ahb3.jpg");
+  }
+  .slide:nth-child(4) .slide__bg {
+      left: -150%;
+      background-image: url("../../projects--img/1366x768/dubai_police.jpg");
+  } 
+}
+
+/*************************************************************************************/

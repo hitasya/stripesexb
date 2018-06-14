@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="projects--css/projects--main.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body class="preloader">
     <!--preloader-->
@@ -132,21 +133,83 @@
         <ul class="overlay-menu">
             <li><a href="#"><span>projects</span></a></li>
             <li><a href="#"><span>about</span></a></li>
-            <li><a href="#"><span>clients</span></a></li>
-            <li><a href="#"><span>services</span></a></li>
             <li><a href="#"><span>contact</span></a></li>
         </ul>
     </div>
 
-    <main class="flexbox">
+    <div class="slider-container">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+            
+            <div class="slide slide-0 active">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Project name 1</h2>
+                        
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide slide-1 ">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Project name 2</h2>
+                        
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide slide-2">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Project name 3</h2>
+                        
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide slide-3">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Project name 4</h2>
+                        
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <main class="flexbox">
+        <!--
         <section class="project-header">
             <div>
                 <h1>Our Projects</h1>
                 <hr>
             </div>
         </section>
-
+    -->
         <a class="project">
             <section class="project-image"></section>
             <section class="project-text">CityScape exhibition stand - Al Hilal Bank</section>
@@ -193,5 +256,6 @@
 
     <script src="../js/nav.js"></script>
     <script src="projects--js/projects--preloader.js"></script>
+    <script src="projects--js/slider.js"></script>
 </body>
 </html>
