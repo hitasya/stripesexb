@@ -15,6 +15,17 @@
     src: url('../fonts/elements-venge-typeface-MGD449-2017-06-16/Venge\ Regular.otf'),
         url('../fonts/elements-venge-typeface-MGD449-2017-06-16/Webfonts/Venge\ Regular.woff');
 }
+@font-face {
+    font-family: 'Venge double';
+    src: url('../fonts/elements-venge-typeface-MGD449-2017-06-16/Venge\ Bold.otf'),
+        url('../fonts/elements-venge-typeface-MGD449-2017-06-16/Webfonts/Venge\ Bold.woff');
+}
+@font-face {
+    font-family: 'Cormier double';
+    src: url('../fonts/elements-cormier-8MWZQ5-2017-04-16/Webfonts/Cormier\ Double.woff');
+}
+
+/*************************************************************/
 
 :root {
     --bg: #fafafa; /* #efefef | #ececec */
@@ -23,12 +34,17 @@
 
     --font-color-footer: #5e5e5f;
     --font-color-heading: goldenrod;
+    --font-color-para: #242528;
 
-    --font-family-for-headings: 'Azedo-Light', 'venge regular', 'Roboto mono', 'ubuntu', monospace;
+    --font-family-for-heading: 'Azedo-Light', 'venge regular', 'Roboto mono', 'ubuntu', monospace;
     --font-family-for-menu: 'roboto mono', monospace;
-
-    --font-letter-spacing: 5pt;
+    --font-family-for-para: 'roboto mono', serif;
+    
+    --letter-spacing-for-heading: 5pt;
+    --letter-spacing-for-para: 1pt;
 }
+
+/************************************************************/
 
 body {
     background-color: var(--bg);
@@ -47,13 +63,21 @@ body {
 main#main {
     background: transparent;
 }
-    main#main h1 {
-        font-family: var(--font-family-for-headings);
-        color: var(--font-color-heading);
-        letter-spacing: var(--font-letter-spacing);
-    }
+
 footer#footer {
     background-color: var(--bg-footer);  
     width: 100%;
     color: var(--font-color-footer);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-for-heading);
+    color: var(--font-color-heading);
+    letter-spacing: var(--letter-spacing-for-heading);
+}
+
+p {
+    font-family: var(--font-family-for-para);
+    color: var(--font-color-para);
+    letter-spacing: var(--letter-spacing-for-para);
 }
