@@ -49,7 +49,7 @@
 /************************************************************/
 
 body {
-    background-color: var(--bg);
+    background: var(--bg);
 }
     body.preloader {
         background: var(--bg-preloader);
