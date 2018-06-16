@@ -1,5 +1,7 @@
 @import url('../../css/index--modules/nav.css');
 @import url('../../css/index--modules/preloader.css');
+@import url('../../css/index--modules/footer.css');
+
 @import url('about--modules/header.css');
 @import url('about--modules/services-scroller.css');
 @import url('about--modules/article.css');

@@ -1,5 +1,15 @@
 footer#footer {
-    padding: 1em;
-    color: #5e5e5f;
+    padding: 3em;
+    display: grid; justify-items: center;
 }
 
+footer#footer h4 {
+    text-align: center;
+}
+footer#footer a {
+    color: rgb(94, 94, 95);
+}
+
+.copyright {
+    margin: 3em 0 0;
+}

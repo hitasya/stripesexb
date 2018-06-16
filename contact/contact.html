@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>About | Stripes Interiors</title>
-
-    <link rel="stylesheet" href="about--css/about--main.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Contact Us | Stripes Exb</title>
+    
+    <link href="contact--css/contact--main.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body class="preloader">
+    
     <!--preloader-->
     <div class="preloader-wrapper">
         <div class="line line1">
@@ -127,8 +125,9 @@
             <span class="circle circle-bottom"></span>
         </div>
     </div>
+    <!-- end of preloader -->
 
-    <!--main-->
+    <!-- nav -->
     <nav class="hamburger-wrapper">
         <div class="hamburger"></div>
     </nav>
@@ -136,91 +135,49 @@
         <ul class="overlay-menu">
             <li><a href="../index.html"><span>home</span></a></li>
             <li><a href="../projects/projects.html"><span>projects</span></a></li>
-            <li><a href="../contact/contact.html"><span>contact</span></a></li>
+            <li><a href="../about/about.html"><span>about</span></a></li>
         </ul>
     </div>
+    <!-- end of nav -->
 
-    <main class="flexbox not-visible">
-        <section class="about-header">
-            <div>
-                <h1>About us</h1>
-                <hr>
-            </div>
-        </section>
+    <main id="main">
+        <div id="map"></div>
 
-        <h1>Welcome to <b>Stripes Interiors LLC</b></h1>
-        <article>
-            <h2>The Vision</h2>
-            <p>
-                Our journey begun with a vision:
+        <!-- the contact form -->
+        <form action="" class="contact-form">
+            
+            <span>Contact Us!</span>
 
-                <blockquote id="motto"><i>Truth serves life, so technology, beauty.</i></blockquote>
-            </p>
-            <p>
-               Every nation and empire across history thrived, and every social and cultural evolution was initiated, not on money but on that which moves the emotions; on beautiful ideas and ideals---
-               It is owing to millennia of collaboration to build the most astounding works of beauty that Europe had become the cradle of civilization, is the most visited continent in the world, and is priceless to the global economy. 
-            </p>
-            <p>
-               Why is this so? Because in a world that runs on emotions, ideas influence all---because people don't buy what you do, they buy why you do it; because they don't suffer for money, but for ideas and ideals that they find beautiful. Thus, man does not live by bread alone.
-            </p>
-            <p>
-               Therefore, by constantly reminding individuals and firms of what they stand for and so who they are, aesthetically beautiful principles help raise civilization to a new level of modernity. 
-            </p>
-            <blockquote>
-                <i>“He alone is modem who is fully conscious of the present”</i> (Jung)
-            </blockquote>
-            <p>
-                We say ‘modern’ and ‘futuristic’; we mean conscious. We do not waste time trying to imagine what a future would be like; instead, we consciously make it by learning from history and from nature.
-            </p>
-            <p>
-                We emphasize the past in order to hold the scales against our break with tradition. For us, "today” stands between “yesterday” and "tomorrow”, and forms a link between past and future. After all, the really modern is often to be found among those who call themselves ‘old-fashioned’.
-            </p>
-        </article>
-        
-        <article>
-            <h2>Our Craft</h2>
-            <p>
-                In nature, there are no straight lines. 
-            </p>
-            <p>
-                When it comes to what things look like, the Western world and modern design is obsessed by perfection, by symmetry and ideal proportion, by invincibility, by stability, by youth, flawlessness… while the aesthetics of the Orient languish. 
-            </p>
-            <p>
-                Our design philosophy is to harmonize this imbalance and to transcend the limits of expression to allow our clients to most fully express their brand principles.
-            </p>
-            <blockquote>
-               <i>“It is only shallow people who do not judge by appearances."</i> - Oscar Wilde
-            </blockquote>
-        </article>
-
-        <article>
-            <h2>Our Services</h2>
-            <div class="services-wrapper">
-                <p class="services-overture">We cater to</p>
-                <div class="services-scroll">
-                    <span class="services-roll">exhibitions.</span>
-                    <span class="services-roll">events.</span>
-                    <span class="services-roll">graphics.</span>
-                    <span class="services-roll">signage.</span>
-                    <span class="services-roll">design.</span>
-                </div>
-            </div>
-            <p>
-                It all starts with you.
-            </p>
-            <p>
-                On each project we listen, we immerse ourselves in your business and the challenges you face to determine the functional and aesthetic needs of the project and to assimilate your expectations. We then provide comprehensive and complete design beginning with an initial design concept, through installation and detailing of final design elements to completion
-            </p>
-            <p>
-                Our expertise lay in design solutions that are creative and innovative yet accountable and whole, and that have the power to enlighten. Our practicality is beauty, and our beauty, practical.
-            </p>
-            <p>
-                We cater to the Exhibitions, Events, Signage and Interior Industry, specialising in the design and build of commercial interiors, bespoke exhibition stands and displays at international standards.
-                We provide a wide range of services including superior quality display stands, hanging banners, vinyl graphics and flooring, raised platforms etc. We provide all services related to Exhibition Stand Designs, Signages and Interiors. Fully in-house, we are equipped with state of the art manufacturing and printing set up, we’re the one-stop-shop when it comes to your exhibition needs and requirements.
-            </p>
-        </article>
-
-
+            <ul>
+                <li>
+                    <i class="fa fa-user form-icon"></i>
+                    <input type="text" placeholder="Name" />
+                </li>
+                <li>
+                    <i class="fa fa-at form-icon"></i>
+                    <input type="text" placeholder="Email" />
+                </li>
+                <li>
+                    <i class="fa fa-university form-icon"></i>
+                    <input type="text" placeholder="Organization/Academic Institution" />
+                </li>
+                <li>
+                    <i class="fa fa-phone form-icon"></i>
+                    <input type="text" placeholder="Phone" />
+                </li>
+                <li>
+                    <i class="fa fa-paper-plane form-icon"></i>
+                    <input type="text" placeholder="Subject" />
+                </li>
+                <li>
+                    <i class="fa fa-envelope form-icon"></i>
+                    <textarea placeholder="Message" rows="2"></textarea>
+                </li>
+                <li>
+                    <input type="submit" placeholder="Submit" />
+                </li>
+            </ul>
+        </form>
     </main>
 
     <footer id="footer">
@@ -239,8 +196,27 @@
         <span class="copyright">© <script>document.write(new Date().getFullYear());</script>, all rights reserved</span>
     </footer> 
 
-    <script src="about--js/about--preloader.js"></script>
     <script src="../js/nav.js"></script>
-    <script src="about--js/about--services-scroller.js"></script>
-</body>
+    <script src="contact--js/contact--preloader.js"></script>
+
+    <!-- google map -->
+    <script>
+        function initMap() {
+            var options = {
+                zoom: 14,
+                center: {lat: 25.116378, lng: 55.229141}
+            }
+
+            var map = new 
+            google.maps.Map(document.querySelector('#map'), options);
+
+            var marker = new 
+            google.maps.Marker({
+                position: {lat: 25.116378, lng: 55.229141},
+                map: map,
+                icon: 'contact--img/map-pin3.png'
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChfX6Q60BuEBB2YuGuY_tolRKSIzgkA3I&callback=initMap"></script>
 </html>

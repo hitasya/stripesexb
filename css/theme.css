@@ -30,7 +30,7 @@
 
 :root {
     --bg: #fafafa; /* #efefef | #ececec */
-    --bg-preloader: #1E0731;
+    --bg-preloader: radial-gradient(#1E0731, #000);
     --bg-footer: #242528;
 
     --font-color-footer: #5e5e5f;
@@ -52,7 +52,7 @@ body {
     background-color: var(--bg);
 }
     body.preloader {
-        background-color: var(--bg-preloader);
+        background: var(--bg-preloader);
     }
 
 
