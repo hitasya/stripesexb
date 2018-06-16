@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Azedo-Bold';
+    font-family: 'Azedo Bold';
     src: url('../fonts/Azedo/Azedo-Bold.otf');
 }
 @font-face {
-    font-family: 'Azedo-Light';
+    font-family: 'Azedo Light';
     src: url('../fonts/Azedo/Azedo-Light.otf');
 }
 @font-face {
@@ -25,6 +25,7 @@
     src: url('../fonts/elements-cormier-8MWZQ5-2017-04-16/Webfonts/Cormier\ Double.woff');
 }
 
+
 /*************************************************************/
 
 :root {
@@ -36,7 +37,7 @@
     --font-color-heading: goldenrod;
     --font-color-para: #242528;
 
-    --font-family-for-heading: 'Azedo-Light', 'venge regular', 'Roboto mono', 'ubuntu', monospace;
+    --font-family-for-heading: 'Azedo Light', 'venge regular', 'Roboto mono', 'ubuntu', monospace;
     --font-family-for-menu: 'roboto mono', monospace;
     --font-family-for-para: 'roboto mono', serif;
     --font-family-for-slider: 'azedo bold', serif;
@@ -86,7 +87,12 @@ p {
     text-justify: inter-word;
 }
 
+/* Projects page */
 .slide__text-heading {
-    font-family: 'azedo bold', serif;
+    font-family: 'Cormier double', 'azedo light', 'Venge', 'venge double', 'azedo bold', serif ;
     color: #fafafa;
 }
+.project-text {
+    font-family: 'Cormier double';
+}
+

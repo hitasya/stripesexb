@@ -271,7 +271,7 @@
   }
   .slide__text-link {
     z-index: 5;
-    display: inline-block;
+    display: none; /*`none` since there's no content about each project yet. display: inline-block;*/ 
     position: relative;
     padding: 0.5rem;
     cursor: pointer;
