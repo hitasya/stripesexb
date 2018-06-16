@@ -1,33 +1,34 @@
 .project-image {
     width: 360px; height: 166px;
     margin: 0 auto;
+    background-position: center; background-repeat: no-repeat;
 }
 
-.project:nth-child(2) .project-image {
+#ahb-cityscape-exhibition {
     background: url('../../projects--img/360x640/360x640-ahb1-copy.jpg');
 }
-.project:nth-child(3) .project-image{
+#dp-meydan-kiosk{
     background: url('../../projects--img/360x640/360x640-dubai_police-copy.jpg');
 }
-.project:nth-child(4) .project-image {
+#acentic-event-2 {
     background: url('../../projects--img/360x640/360x640-acentic-copy.jpg');
 }
-.project:nth-child(5) .project-image {
+#ahb-event-2 {
     background: url('../../projects--img/360x640/360x640-ahb2-copy.jpg');
 }
-.project:nth-child(6) .project-image {
+#nb-bicycle {
     background: url('../../projects--img/360x640/360x640-nb-bike.jpg');
 }
-.project:nth-child(7) .project-image {
+#ahb-event {
     background: url('../../projects--img/360x640/360x640-ahb3-copy.jpg');
 }
-.project:nth-child(8) .project-image {
+#ENBD-event {
     background: url('../../projects--img/360x640/360x640-enbd1-copy.jpg');
 }
-.project:nth-child(9) .project-image {
+#acentic-event {
     background: url('../../projects--img/360x640/360x640-acentic2-copy.jpg');
 }
-.project:nth-child(10) .project-image {
+#ENBD-wholesale-banking {
     background: url('../../projects--img/360x640/360x640-enbd2-copy.jpg');
 }
 
@@ -37,33 +38,32 @@
 @media screen and (min-width: 768px) {
     .project-image {
         width: 768px; height: 353px;
-        margin: 0 auto;
     }
-    .project:nth-child(2) .project-image {
+    #ahb-cityscape-exhibition {
         background: url('../../projects--img/768x1024/768x1024-ahb1-copy.jpg');
     }
-    .project:nth-child(3) .project-image{
+    #dp-meydan-kiosk{
         background: url('../../projects--img/768x1024/768x1024-dubai_police-copy.jpg');
     }
-    .project:nth-child(4) .project-image {
+    #acentic-event-2 {
         background: url('../../projects--img/768x1024/768x1024-acentic-copy.jpg');
     }
-    .project:nth-child(5) .project-image {
-        background: url('../../projects--img/768x1024/768x1024-ahb2-copy.jpg');
+    #ahb-event-2 {
+        background: url('../../projects--img/768x1024/768x1024-ahb2-copy.jpg')
     }
-    .project:nth-child(6) .project-image {
-        background: url('../../projects--img/768x1024/768x1024-nb-bike.jpg');
+    #nb-bicycle {
+        background: url('../../projects--img/768x1024/768x1024-nb-bike-copy.jpg');
     }
-    .project:nth-child(7) .project-image {
+    #ahb-event {
         background: url('../../projects--img/768x1024/768x1024-ahb3-copy.jpg');
     }
-    .project:nth-child(8) .project-image {
+    #ENBD-event {
         background: url('../../projects--img/768x1024/768x1024-enbd1-copy.jpg');
     }
-    .project:nth-child(9) .project-image {
+    #acentic-event {
         background: url('../../projects--img/768x1024/768x1024-acentic2-copy.jpg');
     }
-    .project:nth-child(10) .project-image {
+    #ENBD-wholesale-banking {
         background: url('../../projects--img/768x1024/768x1024-enbd2-copy.jpg');
     }
 }
@@ -74,33 +74,32 @@
 @media screen and (min-width: 1280px) {
     .project-image {
         width: 870px; height: 400px;
-        margin: 0 auto;
     }
-    .project:nth-child(2) .project-image {
+    #ahb-cityscape-exhibition {
         background: url('../../projects--img/1366x768/ahb1.jpg');
     }
-    .project:nth-child(3) .project-image{
+    #dp-meydan-kiosk{
         background: url('../../projects--img/1366x768/dubai_police.jpg');
     }
-    .project:nth-child(4) .project-image {
+    #acentic-event-2 {
         background: url('../../projects--img/1366x768/acentic.jpg');
     }
-    .project:nth-child(5) .project-image {
+    #ahb-event-2 {
         background: url('../../projects--img/1366x768/ahb2.jpg');
     }
-    .project:nth-child(6) .project-image {
-        background: url('../../projects--img/1366x768/nb-bik    e.jpg');
+    #nb-bicycle {
+        background: url('../../projects--img/1366x768/nb-bike.jpg');
     }
-    .project:nth-child(7) .project-image {
+    #ahb-event {
         background: url('../../projects--img/1366x768/ahb3.jpg');
     }
-    .project:nth-child(8) .project-image {
+    #ENBD-event {
         background: url('../../projects--img/1366x768/enbd1.jpg');
     }
-    .project:nth-child(9) .project-image {
+    #acentic-event {
         background: url('../../projects--img/1366x768/acentic2.jpg');
     }
-    .project:nth-child(10) .project-image {
+    #ENBD-wholesale-banking {
         background: url('../../projects--img/1366x768/enbd2.jpg');
     }
 } 
