@@ -59,7 +59,7 @@ form.contact-form ul li input[type="text"] {
 }
 form.contact-form ul li input[type="text"]:focus {
   outline: none;
-  border-bottom: 3px solid #f1a6f3;
+  border-bottom: 3px solid goldenrod;
 }
 form.contact-form ul li input[type="text"]::-webkit-input-placeholder {
   transition: color 0.35s ease;
@@ -78,16 +78,16 @@ form.contact-form ul li input[type="text"]:-ms-input-placeholder {
   color: #ccc;
 }
 form.contact-form ul li input[type="text"]:focus::-webkit-input-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li input[type="text"]:focus:-moz-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li input[type="text"]:focus::-moz-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li input[type="text"]:focus:-ms-input-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li textarea {
   display: inline-block;
@@ -109,7 +109,7 @@ form.contact-form ul li textarea {
 }
 form.contact-form ul li textarea:focus {
   outline: none;
-  border-bottom: 3px solid #f1a6f3;
+  border-bottom: 3px solid goldenrod;
 }
 form.contact-form ul li textarea::-webkit-scrollbar {
   width: 4px;
@@ -135,16 +135,16 @@ form.contact-form ul li textarea:-ms-input-placeholder {
   color: #ccc;
 }
 form.contact-form ul li textarea:focus::-webkit-input-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li textarea:focus:-moz-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li textarea:focus::-moz-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li textarea:focus:-ms-input-placeholder {
-  color: #f1a6f3;
+  color: goldenrod;
 }
 form.contact-form ul li input[type="submit"] {
   margin: 15px auto 15px;
@@ -160,11 +160,11 @@ form.contact-form ul li input[type="submit"] {
 }
 form.contact-form ul li input[type="submit"]:focus {
   outline: none;
-  border: 1px solid #f1a6f3;
+  border: 1px solid goldenrod;
 }
 form.contact-form ul li input[type="submit"]:hover {
   background: #eaeaea;
-  border: 1px solid #f1a6f3;
+  border: 1px solid goldenrod;
 }
 form.contact-form ul li input[type="submit"]:active {
   background: #d0d0d0;
