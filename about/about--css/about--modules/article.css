@@ -2,7 +2,12 @@ article {
     width: 65vw;
 }
 
+article:nth-of-type(3) {
+    margin: 0 0 1em;
+}
+
 #motto {
     text-align: center;
     margin: 0 auto;
 }
+

@@ -24,7 +24,14 @@
     font-family: 'Cormier double';
     src: url('../fonts/elements-cormier-8MWZQ5-2017-04-16/Webfonts/Cormier\ Double.woff');
 }
-
+@font-face {
+    font-family: 'Helvetica m';
+    src: url('../fonts/helveticaneue/HelveticaNeue\ Medium.ttf');
+}
+@font-face {
+    font-family: 'Helvetica thin';
+    src: url('../fonts/helveticaneue/HelveticaNeue\ Thin.ttf');
+}
 
 /*************************************************************/
 
@@ -33,16 +40,16 @@
     --bg-preloader: radial-gradient(#1E0731, #000);
     --bg-footer: #242528;
     
-    --font-family-for-heading: 'cormier double', 'Roboto mono', 'ubuntu', monospace;
+    --font-family-for-heading: 'azedo light', 'Roboto mono', 'ubuntu', monospace;
     --font-family-for-menu: 'roboto mono', monospace;
-    --font-family-for-para: 'helvetica neue', serif;
+    --font-family-for-para: 'helvetica thin', serif;
     --font-family-for-slider: 'azedo bold', serif;
 
     --font-color-footer: #5e5e5f;
-    --font-color-heading: goldenrod;
+    --font-color-heading: rgb(0, 194, 0);
     --font-color-para: #242528;
 
-    --font-size-para: 1.25em;
+    --font-size-para: 1.1em;
 
     --letter-spacing-for-heading: 5pt;
     --letter-spacing-for-para: 1pt;
@@ -51,20 +58,13 @@
 /************************************************************/
 
 body {
-    background: var(--bg);
+    background: var(--bg-preloader);
 }
     body.preloader {
         background: var(--bg-preloader);
     }
 
-
-.overlay-wrapper .overlay-menu li a {
-    text-transform: uppercase;
-    font-family: var(--font-family-for-menu);
-    font-weight: 100;
-}
-
-main#main {
+section#main {
     background: transparent;
 }
 
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font: var(--font-size-para) var(--font-family-for-para);
+    font: small-caps var(--font-size-para)/150% var(--font-family-for-para);
     color: var(--font-color-para);
     letter-spacing: var(--letter-spacing-for-para);
 
@@ -98,3 +98,10 @@ p {
     font-family: 'Cormier double';
 }
 
+/* main slider */
+
+.example-slider .fnc-slide__heading,
+.example-slider .fnc-slide__action-btn,
+.example-slider .fnc-nav__control {
+font-family: 'Cormier double', 'azedo light', 'Venge', 'venge double', 'azedo bold', serif;
+}

@@ -1,7 +1,8 @@
 
-.slider-container {
-    grid-area: header;
+main.page {
+    display: none; /* see the js file that changes this display to block on DOM load */
 }
+
 section#main {
     margin: 0 auto;
     display: flex; flex-direction: column; align-items: center;
@@ -11,8 +12,4 @@ section#main {
 
 footer#footer {
     width: 100vw;
-}
-/* for preloader */
-.not-visible {
-    display: none;
 }

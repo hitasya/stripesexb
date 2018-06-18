@@ -1,7 +1,7 @@
 .about-header {
     background-image: url('../../about--img/about-header.jpg');
     position: relative;
-    height: 50vh; width: 100vw;
+    height: 50vh; width: 100%;
 }
 
 .about-header div {
