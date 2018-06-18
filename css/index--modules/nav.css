@@ -1,150 +1,156 @@
-.menu {
-    visibility: hidden; display: none;
+
+html,
+body {
+height: 100%;
 }
 
-/* hamburger */
-.hamburger-wrapper {
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    position: fixed; z-index: 6;
-    /*mustbeabovethemenuoverlay,overthe`slide__text-link`andthesliderstuff*/
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
+.page {
+height: 100%;
+background-color: #584E4A;
 }
 
-.hamburger, .hamburger::before, .hamburger::after {
-    width: 50px; height: 4px; border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-    background-color: goldenrod;
-}
-.hamburger-wrapper:hover > .hamburger, 
-.hamburger-wrapper:hover > .hamburger::before, 
-.hamburger-wrapper:hover > .hamburger::after {
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
-}
-.hamburger::before, .hamburger::after {
-    content: '';
-    position: absolute;
-    width: 50px; height: 4px; border-radius: 3px;
-}
-.hamburger {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-}
-.hamburger::before {
-    top: -16px;
-}
-.hamburger::after {
-    top: 16px;
+.content {
+height: 200%;
+-webkit-transform-origin: top left;
+        transform-origin: top left;
+transition: -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1), -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+background-color: #f0f0f0;
 }
 
-.hamburger-wrapper.active .hamburger {
-    background: rgba(0, 0, 0, 0);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-}
-.hamburger-wrapper.active .hamburger::before {
-    top: 0;
-    transform: rotate(135deg);
-    background: #fafafa;
-}
-.hamburger-wrapper.active .hamburger::after {
-    top: 0;
-    transform: rotate(405deg);
-    background: #fafafa;
+.content_inner {
+height: 50%;
+overflow-y: auto;
 }
 
-
-/* overlay */
-.overlay-wrapper {
-    background: #000;
-    position: fixed; top: 0; left: 0; bottom: 0; right: 0; /*deleted the `height` and `width` 100% after replacing `position: absolute` with `position: fixed` */
-    /*overflow-y: scroll;*/
-    z-index: 5;
-    visibility: hidden;
-    opacity: 0; transition: all 500ms ease-in-out;
+/* basically all styling from now on */
+.menu_toggle {
+z-index: 900;
+position: fixed;
+top: 0;
+left: 0;
+display: block;
+cursor: pointer;
+width: 100px;
+height: 80px;
+background-color: #F37272;
+border-bottom-right-radius: 100%;
 }
-    .overlay-menu {
-        padding: 0; margin: 0;
-        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    }
-        .overlay-menu li {
-            display: block;
-            font-size: 1rem; font-weight: bold;
-            text-align: center;
-            cursor: pointer;
-            width: 200px; height: 70px; margin: 20px 0 0;
-            transition: all 0.3s ease-out;
-        }
-            .overlay-menu a {
-                color: goldenrod;
-                display: inline-block; 
-                /* we can't set the dimensions for `a` without setting display block */ 
-                width: 200px; height: 60px; padding: 20px 0;
-                position: relative; overflow: hidden;
-                -webkit-user-select: none; /* Safari 3.1+ */
-                -moz-user-select: none; /* Firefox 2+ */
-                -ms-user-select: none; /* IE 10+ */
-                user-select: none; /* Standard syntax */
-            }
-                .overlay-menu span {
-                    display: inline;
-                    /* seems that can be inline, I dunno why they chose `block` */
-
-                }
-            /* cool border-animation for the `a` */
-            .overlay-menu a::before, 
-            .overlay-menu a::after, 
-            .overlay-menu span::before, 
-            .overlay-menu span::after {
-                content: '';
-                position: absolute;
-                transition: transform .4s cubic-bezier(.88, .26, .23, .91);
-            }
-
-            .overlay-menu a::before, 
-            .overlay-menu a::after {
-                background: #fafafa;
-                bottom: 0; right: 0;
-            }   
-            .overlay-menu a::before {width: 100%; height: 1px; transform: translateX(-100%);}
-            .overlay-menu a::after {width: 1px; height: 100%; transform: translateY(100%);}
-            
-            .overlay-menu span::before,
-            .overlay-menu span::after {
-                background: #fafafa;
-                top: 0; left: 0;
-            }
-            .overlay-menu span::before {width: 1px; height: 100%; transform: translateY(-100%);}
-            .overlay-menu span::after {width: 100%; height: 1px; transform: translateX(100%);}
-
-            .overlay-menu a:hover::before,
-            .overlay-menu a:hover span::after {
-                transform: translateX(0);
-            }
-            .overlay-menu a:hover::after,
-            .overlay-menu a:hover span::before {
-                transform: translateY(0);
-            }
-            /*end of cool border animation for the `a`*/
-
-.overlay-wrapper.show {
-    visibility: visible;
-    opacity: 0.96;
+.menu_toggle:active i {
+opacity: 0.8;
 }
-html.no-scroll{
-    overflow: hidden;
+.menu_toggle i {
+color: #f0f0f0;
 }
-/* end of overlay */
-
-/***********************************************************************
-***********************************************************************/
-
-@media screen and (min-width: 1366px) {
-
+.menu_toggle .menu_open,
+.menu_toggle .menu_close {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -15px;
+margin-left: -12px;
+transition: -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1), -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
 }
+.menu_toggle .menu_open {
+-webkit-transform-origin: -100px -100px;
+        transform-origin: -100px -100px;
+}
+.menu_toggle .menu_close {
+-webkit-transform: rotate(20deg);
+        transform: rotate(20deg);
+-webkit-transform-origin: -100px -160px;
+        transform-origin: -100px -160px;
+}
+
+.menu_items {
+position: fixed;
+bottom: 0;
+left: 50px;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.menu_items li {
+height: 60px;
+margin-bottom: 30px;
+-webkit-transform: translateX(-300px);
+        transform: translateX(-300px);
+transition: -webkit-transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1), -webkit-transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+}
+.menu_items li:nth-child(2) {
+margin-left: 40px;
+}
+.menu_items li:nth-child(3) {
+margin-left: 80px;
+}
+.menu_items a {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #a4a4a4;
+transition: color .2s;
+}
+.menu_items a .icon {
+position: relative;
+display: inline-block;
+margin-right: 25px;
+color: #f0f0f0;
+}
+.menu_items a .icon:after {
+position: absolute;
+top: 50%;
+left: 50%;
+content: '';
+display: block;
+width: 60px;
+height: 60px;
+margin-left: -33px;
+margin-top: -32px;
+border-radius: 100%;
+border: 2px solid #f0f0f0;
+transition: border-color .2s;
+}
+.menu_items a:hover {
+color: #f0f0f0;
+}
+.menu_items a:hover .icon:after {
+border-color: #F37272;
+}
+.menu_items a:active .icon {
+color: #F37272;
+}
+
+
+.shazam .content {
+-webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+}
+.shazam .menu_open {
+-webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+}
+.shazam .menu_close {
+-webkit-transform: rotate(0);
+        transform: rotate(0);
+}
+.shazam .menu_items li {
+-webkit-transform: translateX(0);
+        transform: translateX(0);
+transition: -webkit-transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+transition: transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+transition: transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.shazam .menu_items li:nth-child(2) {
+transition-delay: .47s;
+}
+.shazam .menu_items li:nth-child(3) {
+transition-delay: .48s;
+}
+
+

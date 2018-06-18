@@ -32,15 +32,17 @@
     --bg: #fafafa; /* #efefef | #ececec */
     --bg-preloader: radial-gradient(#1E0731, #000);
     --bg-footer: #242528;
+    
+    --font-family-for-heading: 'cormier double', 'Roboto mono', 'ubuntu', monospace;
+    --font-family-for-menu: 'roboto mono', monospace;
+    --font-family-for-para: 'helvetica neue', serif;
+    --font-family-for-slider: 'azedo bold', serif;
 
     --font-color-footer: #5e5e5f;
     --font-color-heading: goldenrod;
     --font-color-para: #242528;
 
-    --font-family-for-heading: 'Azedo Light', 'venge regular', 'Roboto mono', 'ubuntu', monospace;
-    --font-family-for-menu: 'roboto mono', monospace;
-    --font-family-for-para: 'roboto mono', serif;
-    --font-family-for-slider: 'azedo bold', serif;
+    --font-size-para: 1.25em;
 
     --letter-spacing-for-heading: 5pt;
     --letter-spacing-for-para: 1pt;
@@ -79,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: var(--font-family-for-para);
+    font: var(--font-size-para) var(--font-family-for-para);
     color: var(--font-color-para);
     letter-spacing: var(--letter-spacing-for-para);
 

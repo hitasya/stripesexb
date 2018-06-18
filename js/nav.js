@@ -1,34 +1,9 @@
-function init() {
-    /*
-    document.querySelector('.hamburger-wrapper').addEventListener('click', function() {
-        this.classList.toggle('active');
-        document.querySelector('.overlay-wrapper').classList.toggle('show');
-        document.querySelector('body').classList.toggle('noScroll');
-    })
-    */ 
+// elements
+var $page = $('.page');
 
-    // alternative syntax
-    
-    document.querySelector('.hamburger-wrapper').onclick = function() {
-        this.classList.toggle('active');
-        document.querySelector('.overlay-wrapper').classList.toggle('show');
-        document.querySelector('html').classList.toggle('no-scroll'); /*changed the class-name from camelCase to kebab-case as it stopped working (set `overflow-x` to `hidden` for `html` tag due to slider issue in the base stylesheet) and also selected `html` instead of `body`*/
-    }
-}
-document.addEventListener("DOMContentLoaded", init, false);
-
-/* alternative syntax for all of the above:
-
-window.addEventListener("DOMContentLoaded", scrollLoop, false);
- 
-var xScrollPosition;
-var yScrollPosition;
- 
-function scrollLoop() {
-    xScrollPosition = window.scrollX;
-    yScrollPosition = window.scrollY;
- 
-    requestAnimationFrame(scrollLoop);
-}
-
-*/
+$('.menu_toggle').on('click', function(){
+  $page.toggleClass('shazam');
+});
+$('.content').on('click', function(){
+  $page.removeClass('shazam');
+});

@@ -10,6 +10,7 @@
     <title>Stripes Exb</title>
     
     <link type="text/css" rel="stylesheet" href="css/index--main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
@@ -131,93 +132,222 @@
         </div>
     </div>
 
-    <!--main-->
-    <div class="grid-container not-visible">
+    <main class="page">
 
-        <nav class="hamburger-wrapper">
-            <div class="hamburger"></div>
-        </nav>
-        <div class="overlay-wrapper">
-            <ul class="overlay-menu">
-                <li><a href="projects/projects.html"><span>projects</span></a></li>
-                <li><a href="about/about.html"><span>about</span></a></li>
-                <li><a href="contact/contact.html"><span>contact</span></a></li>
-            </ul>
-        </div>
-        
-    <div id="three-container"></div>
+        <!-- menu -->
+        <span class="menu_toggle">
+            <i class="menu_open fa fa-bars fa-lg"></i>
+            <i class="menu_close fa fa-times fa-lg"></i>
+        </span>
+        <ul class="menu_items">
+            <li><a href=""><i class="icon fa fa-signal fa-2x"></i>About</a></li>
+            <li><a href=""><i class="icon fa fa-project-diagram fa-2x"></i>Projects</a></li>
+            <li><a href=""><i class="icon fa fa-user fa-2x"></i>Contact</a></li>
+        </ul>
+		<!-- menu end (not really, the menu tilts the whole page) -->
 
-        <main id="main">
-            <article>
-                <h1>Welcome</h1>
-                <p>
-                    Our journey begun with a vision: 
-                    Truth serves life, and so technology serves beauty.
+		<div class="content">
+			<div class="content_inner">
+
+				<!-- 
+					Please note, that you can apply .m--global-blending-active to .fnc-slider 
+					to enable blend-mode for all background-images or apply .m--blend-bg-active
+					to some specific slides (.fnc-slide). It's disabled by default in this demo,
+					because it requires specific images, where more than 50% of bg is transparent or monotone
+				-->
+				<div class="demo-cont">
+					<!-- slider start -->
+					<div class="fnc-slider example-slider">
+					<div class="fnc-slider__slides">
+						<!-- slide start -->
+						<div class="fnc-slide m--blend-green m--active-slide">
+						<div class="fnc-slide__inner">
+							<div class="fnc-slide__mask">
+							<div class="fnc-slide__mask-inner"></div>
+							</div>
+							<div class="fnc-slide__content">
+							<h2 class="fnc-slide__heading">
+								<div class="fnc-slide__heading-line">
+								<span>Black</span>
+								</div>
+								<div class="fnc-slide__heading-line">
+								<span>Widow</span>
+								</div>
+							</h2>
+							<button type="button" class="fnc-slide__action-btn">
+								Credits
+								<span data-text="Credits">Credits</span>
+							</button>
+							</div>
+						</div>
+						</div>
+						<!-- slide end -->
+						<!-- slide start -->
+						<div class="fnc-slide m--blend-dark">
+						<div class="fnc-slide__inner">
+							<div class="fnc-slide__mask">
+							<div class="fnc-slide__mask-inner"></div>
+							</div>
+							<div class="fnc-slide__content">
+							<h2 class="fnc-slide__heading">
+								<div class="fnc-slide__heading-line">
+								<span>Captain</span>
+								</div>
+								<div class="fnc-slide__heading-line">
+								<span>America</span>
+								</div>
+							</h2>
+							<button type="button" class="fnc-slide__action-btn">
+								Credits
+								<span data-text="Credits">Credits</span>
+							</button>
+							</div>
+						</div>
+						</div>
+						<!-- slide end -->
+						<!-- slide start -->
+						<div class="fnc-slide m--blend-red">
+						<div class="fnc-slide__inner">
+							<div class="fnc-slide__mask">
+							<div class="fnc-slide__mask-inner"></div>
+							</div>
+							<div class="fnc-slide__content">
+							<h2 class="fnc-slide__heading">
+								<div class="fnc-slide__heading-line">
+								<span>Iron</span>
+								</div>
+								<div class="fnc-slide__heading-line">
+								<span>Man</span>
+								</div>
+							</h2>
+							<button type="button" class="fnc-slide__action-btn">
+								Credits
+								<span data-text="Credits">Credits</span>
+							</button>
+							</div>
+						</div>
+						</div>
+						<!-- slide end -->
+						<!-- slide start -->
+						<div class="fnc-slide m--blend-blue">
+						<div class="fnc-slide__inner">
+							<div class="fnc-slide__mask">
+							<div class="fnc-slide__mask-inner"></div>
+							</div>
+							<div class="fnc-slide__content">
+							<h2 class="fnc-slide__heading">
+								<div class="fnc-slide__heading-line">
+								<span>Thor</span>
+								</div>
+								<div class="fnc-slide__heading-line">
+								<span>Just Thor</span>
+								</div>
+							</h2>
+							<button type="button" class="fnc-slide__action-btn">
+								Credits
+								<span data-text="Credits">Credits</span>
+							</button>
+							</div>
+						</div>
+						</div>
+						<!-- slide end -->
+					</div>
+					<nav class="fnc-nav">
+						<div class="fnc-nav__bgs">
+						<div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+						<div class="fnc-nav__bg m--navbg-dark"></div>
+						<div class="fnc-nav__bg m--navbg-red"></div>
+						<div class="fnc-nav__bg m--navbg-blue"></div>
+						</div>
+						<div class="fnc-nav__controls">
+						<button class="fnc-nav__control">
+							Black Widow
+							<span class="fnc-nav__control-progress"></span>
+						</button>
+						<button class="fnc-nav__control">
+							Captain America
+							<span class="fnc-nav__control-progress"></span>
+						</button>
+						<button class="fnc-nav__control">
+							Iron Man
+							<span class="fnc-nav__control-progress"></span>
+						</button>
+						<button class="fnc-nav__control">
+							Thor
+							<span class="fnc-nav__control-progress"></span>
+						</button>
+						</div>
+					</nav>
+					</div>
+					<!-- slider end -->
+				</div>
+	  
+                <section id="main">
+                    <article>
+                        <h1>Welcome</h1>
+                        <p>
+                            Our journey begun with a vision: 
+                            Truth serves life, and so technology serves beauty.
+                            
+                            Nations and Empires thrive not on money, but on beautiful ideas and ideals---
+                            Europe is the most visited continent in the world, and is the cradle of civilization;
+                            Japan succeeded despite its resource-poverty while Russia and South-America struggles;
+                            
+                            Why? Because in a world that runs on emotions, the most powerful economic force is trust, the most creative people are the most empowered, the most successful companies are those that answer their 'why'---because people don't buy what you do, they buy why you do it;they don't suffer for money, but for ideas and ideals that are beautiful.
+                            
+                            Therefore, by constantly reminding people of what they stand for and so who they are, beautifully presented principles multiply productivity within companies, regions, and lives; it thus raises civilization to a new level.
+                            
+                            We're not just another construction firm, but architects of the future; our vision is a unifying project that is conducted under the eye of centuries, and is not restricted to Quarterly reports.
+                            
+                            We contribute to this vision by collaborating with our clients on a one-to-one basis to identify their specific corporate principles, and thus to create modern bespoke and beautiful environments that bespeak the client's brand.
+                            
+                            “It is only shallow people who do not judge by appearances." - Oscar Wilde
+                        </p>
+                    </article>
                     
-                    Nations and Empires thrive not on money, but on beautiful ideas and ideals---
-                    Europe is the most visited continent in the world, and is the cradle of civilization;
-                    Japan succeeded despite its resource-poverty while Russia and South-America struggles;
-                    
-                    Why? Because in a world that runs on emotions, the most powerful economic force is trust, the most creative people are the most empowered, the most successful companies are those that answer their 'why'---because people don't buy what you do, they buy why you do it;they don't suffer for money, but for ideas and ideals that are beautiful.
-                    
-                    Therefore, by constantly reminding people of what they stand for and so who they are, beautifully presented principles multiply productivity within companies, regions, and lives; it thus raises civilization to a new level.
-                    
-                    We're not just another construction firm, but architects of the future; our vision is a unifying project that is conducted under the eye of centuries, and is not restricted to Quarterly reports.
-                    
-                    We contribute to this vision by collaborating with our clients on a one-to-one basis to identify their specific corporate principles, and thus to create modern bespoke and beautiful environments that bespeak the client's brand.
-                    
-                    “It is only shallow people who do not judge by appearances." - Oscar Wilde
-                </p>
-            </article>
+                    <h1>Our clients</h1>
+                    <div id="clients-slider">
+                        <div id="client-slide-holder">
+                            <div class="client-slide"><img src="img/clients/adcb.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/adib.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/ahb.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/ajb.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/bnq.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/dewa.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/dib.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/dxb.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/enbd.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/nbad.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/noor.png" alt="" /></div>
+                            <div class="client-slide"><img src="img/clients/unb.png" alt="" /></div>
+                        </div>
+                    </div>
+                </section>
             
-            <h1>Our clients</h1>
-            <div id="clients-slider">
-                <div id="client-slide-holder">
-                    <div class="client-slide"><img src="img/clients/adcb.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/adib.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/ahb.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/ajb.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/bnq.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/dewa.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/dib.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/dxb.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/enbd.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/nbad.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/noor.png" alt="" /></div>
-                    <div class="client-slide"><img src="img/clients/unb.png" alt="" /></div>
-                </div>
+                <footer id="footer">
+                    <h4>Stripes Interiors LLC</h4>
+                    <address>
+                        Street No. 21<br> 
+                        Al-Quoz Ind-area 4<br>
+                        Dubai, UAE
+                    </address>
+                    <h4>Contact</h4>
+                    <address>
+                        T: <a href="tel:+97143369229"> +971 4336 9229</a><br>
+                        E: <a href="mailto:info@stripesexb.com"> info@stripesexb.com</a><br>
+                        W: <a href="https://stripesexb.com"> www.stripesexb.com</a>
+                    </address>
+                    <span class="copyright">© <script>document.write(new Date().getFullYear());</script>, all rights reserved</span>
+				</footer> 
+				
             </div>
-
-        </main>
-        
-    
-        <footer id="footer">
-            <h4>Stripes Interiors LLC</h4>
-            <address>
-                Street No. 21<br> 
-                Al-Quoz Ind-area 4<br>
-                Dubai, UAE
-            </address>
-            <h4>Contact</h4>
-            <address>
-                T: <a href="tel:+97143369229"> +971 4336 9229</a><br>
-                E: <a href="mailto:info@stripesexb.com"> info@stripesexb.com</a><br>
-                W: <a href="https://stripesexb.com"> www.stripesexb.com</a>
-            </address>
-            <span class="copyright">© <script>document.write(new Date().getFullYear());</script>, all rights reserved</span>
-        </footer> 
-
-    </div>
-
+        </div>
+    </main>
 
     <script src="js/nav.js"></script>
     <script src="js/preloader.js"></script>
 
     <!--three.js slider-->
-    <script src="vendors/three.min.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js'></script>
-    <script src="js/three.js-slider.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
