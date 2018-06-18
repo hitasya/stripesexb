@@ -16,7 +16,7 @@ transition: -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
 transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
 transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1), -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
 background-color: #f0f0f0;
-outline: 1px solid transparent; /* anti-aliasing if use transition */
+outline: 1px dashed transparent; /* anti-aliasing if use transition */
 }
 
 .content_inner {
