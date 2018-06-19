@@ -158,7 +158,7 @@ transition-delay: .48s;
 
 /************************************************************************************************************************************************/
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 630px) {
 	
 	.menu_items li {
 		margin-bottom: -10px;

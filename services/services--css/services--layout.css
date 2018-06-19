@@ -1,0 +1,19 @@
+main.page {
+    display: none; /*changed to block by js after DOM loads */
+}
+
+section#main {
+    display: grid; justify-items: center; grid-template-columns: minmax(320px, 1280px);
+    max-width: 1080px; margin: 2em auto;
+}
+
+/*
+@media screen and (min-width: 768px) {
+    section#main {
+        grid-template-columns: 1fr 2fr;
+        grid-template:
+            "we-cater-to" "heading"
+            "we-cater-to" "article";
+    }
+}
+*/

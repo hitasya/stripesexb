@@ -1,3 +1,6 @@
+main.page {
+    display: none; /*changed to block by js after DOM loads */
+}
 section.flexbox {
     flex-direction: column; 
     align-items: center;
