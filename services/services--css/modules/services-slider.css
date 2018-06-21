@@ -45,6 +45,6 @@ figure.services-slides {
 
 @media screen and (min-width: 768px) {
     #services-slider {
-        grid-area: 4 / 3 / 7 / 4;
+        grid-area: 3 / 3 / 7 / 4;
     }
 }
