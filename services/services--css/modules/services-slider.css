@@ -18,11 +18,11 @@
     80% { left: -800%;}
     87% { left: -800%;}
     90% { left: -900%;}
-    97% { left: -900%;}
+    99% { left: -900%;}
     100% { left: -1000%;}
 }
 
-div#services-slider {
+#services-slider {
     overflow: hidden;
     max-width: 360px;
     margin: 0 auto;
@@ -39,5 +39,12 @@ figure.services-slides {
 .services-slides img {
     width: 10%;
     float: left;
+}
 
+/******************************************************************************************/
+
+@media screen and (min-width: 768px) {
+    #services-slider {
+        grid-area: 4 / 3 / 7 / 4;
+    }
 }

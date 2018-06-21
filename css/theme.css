@@ -46,7 +46,7 @@
     --font-family-for-slider: 'azedo bold', serif;
 
     --font-color-footer: #5e5e5f;
-    --font-color-heading: rgb(0, 194, 0);
+    --font-color-heading: goldenrod;
     --font-color-para: #242528;
 
     --font-size-para: 1.1em;
@@ -104,4 +104,16 @@ p {
 .example-slider .fnc-slide__action-btn,
 .example-slider .fnc-nav__control {
 font-family: 'Cormier double', 'azedo light', 'Venge', 'venge double', 'azedo bold', serif;
+}
+/* end of main slider */
+
+.el__text {
+    font: small-caps var(--font-size-para)/150% var(--font-family-for-para);
+}
+.el__heading {
+    font: small-caps var(--font-family-for-heading);
+}
+
+footer#footer h4 {
+    font: small-caps var(--font-color-heading);
 }

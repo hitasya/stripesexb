@@ -34,14 +34,28 @@ display: block;
 cursor: pointer;
 width: 100px;
 height: 80px;
-background-color: forestgreen;
+background: goldenrod;
+/*
+background: rgba(34, 139, 34, 0);
+*/
 border-bottom-right-radius: 100%;
+transition: all 150ms linear;
+box-shadow: 5px -1px 10px #888888;
 }
+	.menu_toggle:hover {
+		background: gold; 
+		box-shadow: 5px -1px 20px #888888;
+	}
+	.menu_toggle:hover i {
+		color: #f9f9f9;
+	}
 .menu_toggle:active i {
 opacity: 0.8;
+color: #f9f9f9;
 }
 .menu_toggle i {
-color: #f0f0f0;
+color: #fafafa;
+transition: background-color 250ms linear;
 }
 .menu_toggle .menu_open,
 .menu_toggle .menu_close {
@@ -123,10 +137,10 @@ transition: border-color .2s;
 color: #f0f0f0;
 }
 .menu_items a:hover .icon:after {
-border-color: forestgreen;
+border-color: goldenrod;
 }
 .menu_items a:active .icon {
-color: forestgreen;
+color: goldenrod;
 }
 
 
