@@ -2,8 +2,18 @@
     width: 360px; height: 166px;
     margin: 0 auto;
     background-position: center; background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
 }
-
+    .project {
+        overflow: hidden;
+    }
+    .project-image:hover {
+        transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
 #ahb-cityscape-exhibition {
     background: url('../../projects--img/360x640/360x640-ahb1-copy.jpg');
 }

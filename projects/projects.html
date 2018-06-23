@@ -133,7 +133,7 @@
             <i class="menu_open fa fa-bars fa-lg"></i>
             <i class="menu_close fa fa-times fa-lg"></i>
         </span>
-        <ul class="menu_items">
+        <ul class="menu_items inactive">
             <li><a href="../index.html"><i class="icon fa fa-home fa-2x"></i>Home</a></li>
             <li><a href="../services/services.html"><i class="icon fa fa-globe fa-2x"></i>Services</a></li>
             <li><a href="../about/about.html"><i class="icon fa fa-signal fa-2x"></i>About</a></li>
@@ -211,44 +211,87 @@
                 <!-- slider end -->
 
                 <section class="flexbox">
+
+                        <!-- <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="ahb-cityscape-exhibition"></section></a>
+                            <p class="project-text">CityScape exhibition stand - Al Hilal Bank</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="dp-meydan-kiosk"></section></a>
+                            <p class="project-text">meydan booth - dubai police</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="acentic-event-2"></section></a>
+                            <p class="project-text">event booth - accentic</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="ahb-event-2"></section></a>
+                            <p class="project-text">event booth - al-hilal bank</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="nb-bicycle"></section></a>
+                            <p class="project-text">bicycle recharging station - noor bank</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="ahb-event"></section></a>
+                            <p class="project-text">event booth - al-hilal bank</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="ENBD-event"></section></a>
+                            <p class="project-text">event booth - ENBD</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="acentic-event"></section></a>
+                            <p class="project-text">event booth - acentic</p>
+                        </a>
+                        <a class="project">
+                            <a href="../projects/projects--img/1366x768/"><section class="project-image" id="ENBD-wholesale-banking"></section></a>
+                            <p class="project-text">exhibition booth - ENBD wholesale banking</p>
+                        </a>  -->
                     
                     <a class="project">
-                        <section class="project-image" id="ahb-cityscape-exhibition"></section>
+                        <a href="../img/projects/ahb1.jpg" data-lightbox="projects"><section class="project-image" id="ahb-cityscape-exhibition"></section></a>
                         <p class="project-text">CityScape exhibition stand - Al Hilal Bank</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="dp-meydan-kiosk"></section>
+                        <a href="../img/projects/dubai_police.jpg" data-lightbox="projects"><section class="project-image" id="dp-meydan-kiosk"></section></a>
                         <p class="project-text">meydan booth - dubai police</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="acentic-event-2"></section>
+                        <a href="../img/projects/acentic.jpg" data-lightbox="projects"><section class="project-image" id="acentic-event-2"></section></a>
                         <p class="project-text">event booth - accentic</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="ahb-event-2"></section>
+                        <a href="../img/projects/ahb2.jpg" data-lightbox="projects"><section class="project-image" id="ahb-event-2"></section></a>
                         <p class="project-text">event booth - al-hilal bank</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="nb-bicycle"></section>
+                        <a href="../img/projects/nb-bike.jpg" data-lightbox="projects"><section class="project-image" id="nb-bicycle"></section></a>
                         <p class="project-text">bicycle recharging station - noor bank</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="ahb-event"></section>
+                        <a href="../img/projects/ahb3.jpg" data-lightbox="projects"><section class="project-image" id="ahb-event"></section></a>
                         <p class="project-text">event booth - al-hilal bank</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="ENBD-event"></section>
+                        <a href="../img/projects/enbd1.jpg" data-lightbox="projects"><section class="project-image" id="ENBD-event"></section></a>
                         <p class="project-text">event booth - ENBD</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="acentic-event"></section>
+                        <a href="../img/projects/acentic2.jpg" data-lightbox="projects"><section class="project-image" id="acentic-event"></section></a>
                         <p class="project-text">event booth - acentic</p>
                     </a>
                     <a class="project">
-                        <section class="project-image" id="ENBD-wholesale-banking"></section>
+                        <a href="../img/projects/enbd2.jpg" data-lightbox="projects"><section class="project-image" id="ENBD-wholesale-banking"></section></a>
                         <p class="project-text">exhibition booth - ENBD wholesale banking</p>
                     </a>
 
+                </section>
+                <section class="lightbox">
+                    <span class="close" onclick="closeLightbox()">&times;</span>
+                    <div class="lightbox-content">
+
+                    </div>
                 </section>
 
                 <footer id="footer">
@@ -275,5 +318,14 @@
     <script src="../js/nav.js"></script>
     <script src="../js/preloader.js"></script>
     <script src="projects--js/slider.js"></script>
+
+    <!-- lightbox -->
+    <script src="../js/vendors/lightbox2-master/dist/js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
+    </script>
 </body>
 </html>

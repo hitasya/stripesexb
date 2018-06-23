@@ -1,3 +1,5 @@
+@import url('../../js/vendors/lightbox2-master/dist/css/lightbox.min.css');
+
 @import url('../../css/index--modules/nav.css');
 @import url('../../css/index--modules/preloader.css');
 @import url('../../css/index--modules/footer.css');
