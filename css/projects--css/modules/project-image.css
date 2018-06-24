@@ -1,0 +1,115 @@
+.project-image {
+    width: 360px; height: 166px;
+    margin: 0 auto;
+    background-position: center; background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+}
+    .project {
+        overflow: hidden;
+    }
+    .project-image:hover {
+        transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
+#ahb-cityscape-exhibition {
+    background: url('../../../images/projects--img/360x640/360x640-ahb1-copy.jpg');
+}
+#dp-meydan-kiosk{
+    background: url('../../../images/projects--img/360x640/360x640-dubai_police-copy.jpg');
+}
+#acentic-event-2 {
+    background: url('../../../images/projects--img/360x640/360x640-acentic-copy.jpg');
+}
+#ahb-event-2 {
+    background: url('../../../images/projects--img/360x640/360x640-ahb2-copy.jpg');
+}
+#nb-bicycle {
+    background: url('../../../images/projects--img/360x640/360x640-nb-bike.jpg');
+}
+#ahb-event {
+    background: url('../../../images/projects--img/360x640/360x640-ahb3-copy.jpg');
+}
+#ENBD-event {
+    background: url('../../../images/projects--img/360x640/360x640-enbd1-copy.jpg');
+}
+#acentic-event {
+    background: url('../../../images/projects--img/360x640/360x640-acentic2-copy.jpg');
+}
+#ENBD-wholesale-banking {
+    background: url('../../../images/projects--img/360x640/360x640-enbd2-copy.jpg');
+}
+
+/****************************************************************************
+****************************************************************************/
+
+@media screen and (min-width: 768px) {
+    .project-image {
+        width: 768px; height: 353px;
+    }
+    #ahb-cityscape-exhibition {
+        background: url('../../../images/projects--img/768x1024/768x1024-ahb1-copy.jpg');
+    }
+    #dp-meydan-kiosk{
+        background: url('../../../images/projects--img/768x1024/768x1024-dubai_police-copy.jpg');
+    }
+    #acentic-event-2 {
+        background: url('../../../images/projects--img/768x1024/768x1024-acentic-copy.jpg');
+    }
+    #ahb-event-2 {
+        background: url('../../../images/projects--img/768x1024/768x1024-ahb2-copy.jpg')
+    }
+    #nb-bicycle {
+        background: url('../../../images/projects--img/768x1024/768x1024-nb-bike-copy.jpg');
+    }
+    #ahb-event {
+        background: url('../../../images/projects--img/768x1024/768x1024-ahb3-copy.jpg');
+    }
+    #ENBD-event {
+        background: url('../../../images/projects--img/768x1024/768x1024-enbd1-copy.jpg');
+    }
+    #acentic-event {
+        background: url('../../../images/projects--img/768x1024/768x1024-acentic2-copy.jpg');
+    }
+    #ENBD-wholesale-banking {
+        background: url('../../../images/projects--img/768x1024/768x1024-enbd2-copy.jpg');
+    }
+}
+
+/****************************************************************************
+****************************************************************************/
+
+@media screen and (min-width: 1280px) {
+    .project-image {
+        width: 870px; height: 400px;
+    }
+    #ahb-cityscape-exhibition {
+        background: url('../../../images/projects--img/1366x768/ahb1.jpg');
+    }
+    #dp-meydan-kiosk{
+        background: url('../../../images/projects--img/1366x768/dubai_police.jpg');
+    }
+    #acentic-event-2 {
+        background: url('../../../images/projects--img/1366x768/acentic.jpg');
+    }
+    #ahb-event-2 {
+        background: url('../../../images/projects--img/1366x768/ahb2.jpg');
+    }
+    #nb-bicycle {
+        background: url('../../../images/projects--img/1366x768/nb-bike.jpg');
+    }
+    #ahb-event {
+        background: url('../../../images/projects--img/1366x768/ahb3.jpg');
+    }
+    #ENBD-event {
+        background: url('../../../images/projects--img/1366x768/enbd1.jpg');
+    }
+    #acentic-event {
+        background: url('../../../images/projects--img/1366x768/acentic2.jpg');
+    }
+    #ENBD-wholesale-banking {
+        background: url('../../../images/projects--img/1366x768/enbd2.jpg');
+    }
+} 

@@ -403,15 +403,15 @@ transition: transform 0.7s, -webkit-transform 0.7s;
 }
 .example-slider .fnc-slide-1 .fnc-slide__inner,
 .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-background-image: url("../../projects/projects--img/360x640/360x640-nb-bike.jpg");
+background-image: url("../../images/projects--img/360x640/360x640-nb-bike.jpg");
 }
 .example-slider .fnc-slide-2 .fnc-slide__inner,
 .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-background-image: url("../../projects/projects--img/360x640/360x640-ahb2-copy.jpg");
+background-image: url("../../images/projects--img/360x640/360x640-ahb2-copy.jpg");
 }
 .example-slider .fnc-slide-3 .fnc-slide__inner,
 .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-background-image: url("../../projects/projects--img/360x640/360x640-enbd1-copy.jpg");
+background-image: url("../../images/projects--img/360x640/360x640-enbd1-copy.jpg");
 }
 .example-slider .fnc-slide-3 .fnc-slide__inner:before {
 content: "";
@@ -424,7 +424,7 @@ background: rgba(255, 255, 255, 0.1);
 }
 .example-slider .fnc-slide-4 .fnc-slide__inner,
 .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-background-image: url("../../projects/projects--img/360x640/360x640-enbd2-copy.jpg");
+background-image: url("../../images/projects--img/360x640/360x640-enbd2-copy.jpg");
 }
 .example-slider .fnc-slide-4 .fnc-slide__inner:before {
 content: "";
@@ -628,7 +628,11 @@ transition-timing-function: ease;
 		transform: rotate(-45deg) scaleX(0) translateZ(0);
 }
 
-/****************************************************************************************************************************************************************************************/
+/* 
+**************************************************************************************************************************************************************************
+* breakpoint
+**************************************************************************************************************************************************************************
+*/
 
 @media screen and (max-width: 768px) {
 	.fnc-slide__heading-line {
@@ -638,42 +642,52 @@ transition-timing-function: ease;
 	}
 }
 
-/****************************************************************************************************************************************************************************************/
+/* 
+**************************************************************************************************************************************************************************
+* breakpoint
+**************************************************************************************************************************************************************************
+*/
 
 @media screen and (min-width: 768px) {
-.example-slider .fnc-slide-1 .fnc-slide__inner,
-.example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/768x1024/768x1024-nb-bike-copy.jpg");
-}
-.example-slider .fnc-slide-2 .fnc-slide__inner,
-.example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/768x1024/768x1024-ahb2-copy.jpg");
-}
-.example-slider .fnc-slide-3 .fnc-slide__inner,
-.example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/768x1024/768x1024-enbd1-copy.jpg");
-}
-.example-slider .fnc-slide-4 .fnc-slide__inner,
-.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/768x1024/768x1024-enbd2-copy.jpg");
-}
+	.example-slider .fnc-slide-1 .fnc-slide__inner,
+	.example-slider .fnc-slide-1 .fnc-slide__mask-inner {
+		background-image: url("../../images/projects--img/768x1024/768x1024-nb-bike-copy.jpg");
+	}
+	.example-slider .fnc-slide-2 .fnc-slide__inner,
+	.example-slider .fnc-slide-2 .fnc-slide__mask-inner {
+		background-image: url("../../images/projects--img/768x1024/768x1024-ahb2-copy.jpg");
+	}
+	.example-slider .fnc-slide-3 .fnc-slide__inner,
+	.example-slider .fnc-slide-3 .fnc-slide__mask-inner {
+		background-image: url("../../images/projects--img/768x1024/768x1024-enbd1-copy.jpg");
+	}
+	.example-slider .fnc-slide-4 .fnc-slide__inner,
+	.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
+		background-image: url("../../images/projects--img/768x1024/768x1024-enbd2-copy.jpg");
+	}
 }
 
+/* 
+**************************************************************************************************************************************************************************
+* breakpoint
+**************************************************************************************************************************************************************************
+*/
+
 @media screen and (min-width: 1280px) {
-.example-slider .fnc-slide-1 .fnc-slide__inner,
-.example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/1366x768/nb-bike.jpg");
-}
-.example-slider .fnc-slide-2 .fnc-slide__inner,
-.example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/1366x768/ahb2.jpg");
-}
-.example-slider .fnc-slide-3 .fnc-slide__inner,
-.example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/1366x768/enbd1.jpg");
-}
-.example-slider .fnc-slide-4 .fnc-slide__inner,
-.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-	background-image: url("../../projects/projects--img/360x640/360x640-enbd2-copy.jpg");
-}
+	.example-slider .fnc-slide-1 .fnc-slide__inner,
+	.example-slider .fnc-slide-1 .fnc-slide__mask-inner {
+		background-image: url("../../images/projects--img/1366x768/nb-bike.jpg");
+	}
+	.example-slider .fnc-slide-2 .fnc-slide__inner,
+	.example-slider .fnc-slide-2 .fnc-slide__mask-inner {
+		background-image: url("../../images/projects--img/1366x768/ahb2.jpg");
+	}
+	.example-slider .fnc-slide-3 .fnc-slide__inner,
+	.example-slider .fnc-slide-3 .fnc-slide__mask-inner {
+		background-image: url("../../images/projects--img/1366x768/enbd1.jpg");
+	}
+	.example-slider .fnc-slide-4 .fnc-slide__inner,
+	.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
+		background-image: url("../../projects/projects--img/360x640/360x640-enbd2-copy.jpg");
+	}
 }
