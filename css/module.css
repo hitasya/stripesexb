@@ -1,0 +1,62 @@
+/* 
+**********************************
+* index 
+**********************************
+*/
+
+@import url('modules/preloader.css');
+@import url('modules/nav.css');
+@import url('modules/footer.css');
+
+@import url('modules/clients-carousel.css');
+@import url('modules/headings.css');
+@import url('modules/article.css');
+@import url('modules/slider-nikolay.css');
+
+/* 
+**********************************
+* services
+**********************************
+*/
+
+@import url('modules/services-scroller.css');
+@import url('modules/services-sections.css');
+@import url('modules/services-slider.css');
+
+/* 
+**********************************
+* contact us
+**********************************
+*/
+
+@import url('modules/map.css');
+@import url('modules/contact-form.css');
+
+/* 
+**********************************
+* about us
+**********************************
+*/
+
+@import url('modules/about--header.css');
+    
+/* 
+**********************************
+* projects showcase
+**********************************
+*/
+
+@import url('../../js/vendors/lightbox2-master/dist/css/lightbox.min.css');
+
+@import url('modules/projects-header.css');
+@import url('modules/project-text.css');
+@import url('modules/project-link.css');
+@import url('modules/project-image.css');
+@import url('modules/slider.css');
+
+/* 
+**********************************
+* project info page
+**********************************
+*/
+

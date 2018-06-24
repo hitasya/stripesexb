@@ -1,0 +1,11 @@
+footer#footer h4 {
+    text-align: center;
+}
+
+footer#footer a {
+    color: rgb(94, 94, 95);
+}
+
+.copyright {
+    margin: 3em 0 0;
+}

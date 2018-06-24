@@ -1,0 +1,24 @@
+main.page {
+    display: none; /*changed to block by js after DOM loads */
+}
+
+section#main {
+    margin: 4em auto 0; padding: 2em;
+    display: flex; flex-flow: column wrap; align-items: center;
+    width: 98%; max-width: 1080px;
+    position: relative; top: -4em; 
+    background: transparent; /* so that the slider transition animation isn't covered*/
+}
+
+footer#footer {
+    position: relative;
+    width: 100vw; padding: 3em;
+    display: grid; justify-items: center; justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    section#main {
+        grid-template-columns: 1fr 360px;
+        grid-template-columns: minmax(320px, 1280px);
+    }
+}

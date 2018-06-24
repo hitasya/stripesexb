@@ -1,0 +1,33 @@
+p {
+    margin: 1em;
+    /* width: 65vw; for index page */
+}
+
+/* about us page */
+article:nth-of-type(3) {
+    margin: 0 0 1em;
+}
+    #motto {
+        text-align: center;
+        margin: 0 auto;
+    }
+/* end of about us page */
+
+@media screen and (min-width: 768px) {
+    p:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+    p:nth-child(2) {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+    p:nth-child(3) {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    p:nth-child(4) {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+    p:nth-child(5) {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+}
+
