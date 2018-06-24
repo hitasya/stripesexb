@@ -12,5 +12,13 @@ section#main {
 
 footer#footer {
     position: relative;
-    width: 100vw;
+    width: 100vw; padding: 3em;
+    display: grid; justify-items: center; justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    section#main {
+        grid-template-columns: 1fr 360px;
+        grid-template-columns: minmax(320px, 1280px);
+    }
 }

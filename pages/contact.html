@@ -8,7 +8,7 @@
 
     <title>Contact Us | Stripes Exb</title>
     
-    <link rel="stylesheet" href="../css/contact--css/contact--main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
@@ -146,8 +146,8 @@
 		<div class="content">
 			<div class="content_inner">
 
+                <div id="map"></div>
                 <section id="main">
-                    <div id="map"></div>
 
                     <!-- contact form -->
                     <form action="" class="contact-form">
@@ -214,7 +214,7 @@
     <script>
         function initMap() {
             var options = {
-                zoom: 14,
+                zoom: 12,
                 center: {lat: 25.116378, lng: 55.229141}
             }
             var map = new 
@@ -224,7 +224,7 @@
             google.maps.Marker({
                 position: {lat: 25.116378, lng: 55.229141},
                 map: map,
-                icon: 'contact--img/map-pin3.png'
+                icon: '../images/map-pin3.png'
             });
         }
     </script>

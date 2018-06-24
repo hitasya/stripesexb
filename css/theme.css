@@ -40,8 +40,8 @@
     --bg-preloader: radial-gradient(#1E0731, #000);
     --bg-footer: #242528;
     
-    --font-family-for-heading: 'azedo light', 'Roboto mono', 'ubuntu', monospace;
-    --font-family-for-menu: 'roboto mono', monospace;
+    --font-family-for-heading: 'azedo light', serif;
+    --font-family-for-menu: 'roboto mono', serif;
     --font-family-for-para: 'helvetica thin', serif;
     --font-family-for-slider: 'azedo bold', serif;
 
@@ -60,9 +60,6 @@
 body {
     background: var(--bg-preloader);
 }
-    body.preloader {
-        background: var(--bg-preloader);
-    }
 
 section#main {
     background: transparent;
@@ -70,7 +67,6 @@ section#main {
 
 footer#footer {
     background-color: var(--bg-footer);  
-    width: 100%;
     color: var(--font-color-footer);
 }
 
@@ -91,7 +87,7 @@ p {
 
 /* Projects page */
 .slide__text-heading {
-    font-family: 'Cormier double', 'azedo light', 'Venge', 'venge double', 'azedo bold', serif ;
+    font-family: 'Cormier double', 'azedo bold', serif ;
     color: #fafafa;
 }
 .project-text {
@@ -103,7 +99,7 @@ p {
 .example-slider .fnc-slide__heading,
 .example-slider .fnc-slide__action-btn,
 .example-slider .fnc-nav__control {
-font-family: 'Cormier double', 'azedo light', 'Venge', 'venge double', 'azedo bold', serif;
+font-family: 'Cormier double', 'azedo bold', serif;
 }
 /* end of main slider */
 
@@ -112,8 +108,4 @@ font-family: 'Cormier double', 'azedo light', 'Venge', 'venge double', 'azedo bo
 }
 .el__heading {
     font: small-caps var(--font-family-for-heading);
-}
-
-footer#footer h4 {
-    font: small-caps var(--font-color-heading);
 }

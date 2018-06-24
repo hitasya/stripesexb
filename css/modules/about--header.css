@@ -1,5 +1,5 @@
 .about-header {
-    background-image: url('../../../images/about-header.jpg');
+    background-image: url('../../images/about-header.jpg');
     position: relative;
     height: 50vh; width: 100%;
 }
@@ -44,7 +44,3 @@
         left: 0;
     }
 */
-
-h1 {
-    text-align: center;
-}
