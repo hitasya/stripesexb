@@ -2,4 +2,15 @@
     display: flex; justify-content: center; align-items: center;
     height: 4em;
     margin: 1em;
+    cursor: pointer;
+}
+
+
+.project-text a {
+    color: rgb(36, 37, 40);
+    transition: color 0.7s;
+}
+
+.project-text a:hover {
+    color: rgba(255,81,81,.9);
 }
