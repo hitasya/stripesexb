@@ -1,0 +1,21 @@
+.project--perspective-images {
+    margin: 2em auto 1em;
+}
+
+.project--perspective-images img {
+    transition: transform 0.7s;
+}
+.project--perspective-images img:hover {
+    transform: scale(1.1);
+}
+
+/* 
+.project--perspective-images img {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    transition: filter 0.7s; 
+}
+.project--perspective-images img:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+} */

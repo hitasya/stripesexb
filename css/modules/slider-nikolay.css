@@ -688,6 +688,6 @@ transition-timing-function: ease;
 	}
 	.example-slider .fnc-slide-4 .fnc-slide__inner,
 	.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-		background-image: url("../../projects/projects--img/360x640/360x640-enbd2-copy.jpg");
+		background-image: url("../../images/projects--img/360x640/360x640-enbd2-copy.jpg");
 	}
 }

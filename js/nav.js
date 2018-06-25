@@ -8,5 +8,5 @@ $('.menu_toggle').on('click', function(){
 });
 $('.content').on('click', function(){
   $page.removeClass('shazam');
-  $menu.toggleClass('inactive');
+  $menu.addClass('inactive');
 });

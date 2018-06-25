@@ -1,0 +1,79 @@
+.return-button-to-projects-container {
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3em 0 0;
+    text-align: center;
+  }
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+ .return-button-to-projects-container a {
+    color: #000;
+    line-height: 1.4;
+    /* padding: 12px 0 0 5px; */
+    text-decoration: none;
+  }
+  .return-button-to-projects-container a:hover {
+    color: #000;
+  }
+  
+  .btn {
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    .btn {
+      margin: 0 1em 2em;
+    }
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .btn-1 {
+    font-weight: 100;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+  }
+  .btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .btn-1 rect {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1;
+    stroke-dasharray: 420, 0px;    
+    transition-delay: none;
+  }
+  
+  .btn-1:hover {
+    background: rgba(0, 0, 0, 0);
+    letter-spacing: 1px;
+  }
+  .btn-1:hover rect {
+    stroke-width: 1;
+    stroke-dasharray: 64px, 158;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
