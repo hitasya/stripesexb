@@ -94,6 +94,14 @@ p {
     font-family: 'Cormier double';
 }
 
+.project-text a {
+    color: rgb(36, 37, 40);
+    transition: color 0.23s;
+}
+
+.project-text a:hover {
+    color: rgba(255,81,81,.9);
+}
 /* main slider */
 
 .example-slider .fnc-slide__heading,

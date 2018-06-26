@@ -173,8 +173,11 @@ transition-delay: .47s;
 transition-delay: .48s;
 }
 
-/************************************************************************************************************************************************/
-
+/* 
+******************************************************
+*
+******************************************************
+*/
 @media screen and (max-height: 630px) {
 	
 	.menu_items li {
@@ -205,5 +208,22 @@ transition-delay: .48s;
 @media screen and (min-height: 900px) {
 	.menu_items {
 		margin: 50px;
+	}
+}
+
+/* 
+******************************************************
+* breakpoints
+******************************************************
+*/
+
+@media screen and (max-width: 768px) {
+	.menu_toggle {
+		width: 90px; height: 70px;
+	}
+}
+@media screen and (max-width: 360px) {
+	.menu_toggle {
+		width: 70px; height: 60px;
 	}
 }
