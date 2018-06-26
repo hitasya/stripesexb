@@ -109,3 +109,12 @@ font-family: 'Cormier double', 'azedo bold', serif;
 .el__heading {
     font: small-caps var(--font-family-for-heading);
 }
+
+/* border for blockquote */
+blockquote {
+    border-left: 3px solid goldenrod;
+}
+
+blockquote#motto {
+    border-left: none;
+}

@@ -411,7 +411,7 @@ background-image: url("../../images/projects--img/360x640/360x640-ahb2-copy.jpg"
 }
 .example-slider .fnc-slide-3 .fnc-slide__inner,
 .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-background-image: url("../../images/projects--img/360x640/360x640-enbd1-copy.jpg");
+background-image: url("../../images/projects--img/360x640/360x640-acentic2-copy.jpg");
 }
 .example-slider .fnc-slide-3 .fnc-slide__inner:before {
 content: "";
@@ -424,7 +424,7 @@ background: rgba(255, 255, 255, 0.1);
 }
 .example-slider .fnc-slide-4 .fnc-slide__inner,
 .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-background-image: url("../../images/projects--img/360x640/360x640-enbd2-copy.jpg");
+background-image: url("../../images/projects--img/360x640/360x640-ahb1-copy.jpg");
 }
 .example-slider .fnc-slide-4 .fnc-slide__inner:before {
 content: "";
@@ -655,15 +655,15 @@ transition-timing-function: ease;
 	}
 	.example-slider .fnc-slide-2 .fnc-slide__inner,
 	.example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-		background-image: url("../../images/projects--img/768x1024/768x1024-ahb2-copy.jpg");
+		background-image: url("../../images/projects--img/768x1024/768x1024-dubai_police-copy.jpg");
 	}
 	.example-slider .fnc-slide-3 .fnc-slide__inner,
 	.example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-		background-image: url("../../images/projects--img/768x1024/768x1024-enbd1-copy.jpg");
+		background-image: url("../../images/projects--img/768x1024/768x1024-acentic2-copy.jpg");
 	}
 	.example-slider .fnc-slide-4 .fnc-slide__inner,
 	.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-		background-image: url("../../images/projects--img/768x1024/768x1024-enbd2-copy.jpg");
+		background-image: url("../../images/projects--img/768x1024/768x1024-ahb1-copy.jpg");
 	}
 }
 
@@ -680,14 +680,14 @@ transition-timing-function: ease;
 	}
 	.example-slider .fnc-slide-2 .fnc-slide__inner,
 	.example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-		background-image: url("../../images/projects--img/1366x768/ahb2.jpg");
+		background-image: url("../../images/projects--img/1366x768/dubai_police.jpg");
 	}
 	.example-slider .fnc-slide-3 .fnc-slide__inner,
 	.example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-		background-image: url("../../images/projects--img/1366x768/enbd1.jpg");
+		background-image: url("../../images/projects--img/1366x768/acentic2.jpg");
 	}
 	.example-slider .fnc-slide-4 .fnc-slide__inner,
 	.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-		background-image: url("../../images/projects--img/360x640/360x640-enbd2-copy.jpg");
+		background-image: url("../../images/projects--img/1366x768/ahb1.jpg");
 	}
 }
