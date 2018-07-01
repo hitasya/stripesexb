@@ -14,7 +14,7 @@ height: 200%;
 transition: -webkit-transform 0.7s ease-in-out;
 transition: transform 0.7s ease-in-out;
 transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
-background-color: #f0f0f0;
+background-color: transparent;
 outline: 1px dashed transparent; /* anti-aliasing if use transition */
 }
 

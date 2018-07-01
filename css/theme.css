@@ -36,7 +36,7 @@
 /*************************************************************/
 
 :root {
-    --bg: #fafafa; /* #efefef | #ececec */
+    --bg: transparent; /* #efefef | #ececec */
     --bg-preloader: radial-gradient(#1E0731, #000);
     --bg-footer: #242528;
     
@@ -62,7 +62,7 @@ body {
 }
 
 section#main {
-    background: transparent;
+    background: var(--bg);
 }
 
 footer#footer {
