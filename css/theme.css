@@ -39,6 +39,7 @@
     --bg: transparent; /* #efefef | #ececec */
     --bg-preloader: radial-gradient(#1E0731, #000);
     --bg-footer: #242528;
+    --bg-article: rgba(250, 250, 250, 0.95);
     
     --font-family-for-heading: 'azedo light', serif;
     --font-family-for-menu: 'roboto mono', serif;
@@ -76,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: var(--letter-spacing-for-heading);
 }
 
+article {
+    background: var(--bg-article);
+    border-radius: 3px;
+}
 p {
     font: small-caps var(--font-size-para)/150% var(--font-family-for-para);
     color: var(--font-color-para);

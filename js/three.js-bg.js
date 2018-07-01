@@ -69,7 +69,7 @@ function init() {
   scene.add(ambientLight);
   
   var lights = [];
-lights[0] = new THREE.DirectionalLight( 0xffffff, 1 );
+lights[0] = new THREE.DirectionalLight( 0xdaa520, 1 );
 lights[0].position.set( 1, 0, 0 );
 lights[1] = new THREE.DirectionalLight( 0x11E8BB, 1 );
 lights[1].position.set( 0.75, 1, 0.5 );
