@@ -1,0 +1,12 @@
+
+canvas{ z-index: -1; position: fixed; top:0;}
+
+body {
+  width: 100%;
+  background: radial-gradient(#1E0731, #000); /* Old browsers */
+  background: radial-gradient(#1E0731, #000); /* FF3.6-15 */
+  background: radial-gradient(#1E0731, #000); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(#1E0731, #000); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11e8bb', endColorstr='#8200c9',GradientType=0 ); /* IE6-9 */
+}
+
