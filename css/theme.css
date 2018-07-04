@@ -100,7 +100,7 @@ p {
 }
 
 .project-text a {
-    color: rgb(36, 37, 40);
+    color: #fafafa;
     transition: color 0.23s;
 }
 
